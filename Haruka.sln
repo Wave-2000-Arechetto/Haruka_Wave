@@ -1,0 +1,22 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haruka", "Haruka.csproj", "{8E56B07C-A4C2-44F3-AEB9-8A93080BF1AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E56B07C-A4C2-44F3-AEB9-8A93080BF1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E56B07C-A4C2-44F3-AEB9-8A93080BF1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E56B07C-A4C2-44F3-AEB9-8A93080BF1AF}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{8E56B07C-A4C2-44F3-AEB9-8A93080BF1AF}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{8E56B07C-A4C2-44F3-AEB9-8A93080BF1AF}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{8E56B07C-A4C2-44F3-AEB9-8A93080BF1AF}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		EnableNuGetPackageRestore = true
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,20 @@
+{
+    "id": "Haruka",           
+    "name":"遥",
+    "author":"Wave",
+    "description":"A character mod from Arknights",
+    "version":"0.1.0",
+    "has_pck": true,         
+    "has_dll": true,        
+    "dependencies": [
+    {
+        "id": "STS2-RitsuLib"
+        
+    },
+    {
+        "id": "MinionLib"
+    }
+    
+],    
+    "affects_gameplay": true
+}
