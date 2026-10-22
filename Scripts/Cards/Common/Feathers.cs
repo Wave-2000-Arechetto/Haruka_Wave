@@ -34,10 +34,7 @@ namespace Haruka.Scripts.Cards.Common
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            
-            await Inspire(choiceContext, 1);
-            await OrbCmd.Channel<BubbleOrb>(choiceContext, Owner);
-            
+            await OrbCmd.Channel<BubbleOrb>(choiceContext, Owner);            
             await PowerCmd.Apply<BubbleNextTurnPower>(choiceContext, Owner.Creature, DynamicVars["Turns"].BaseValue, Owner.Creature, cardPlay.Card);
             
             
