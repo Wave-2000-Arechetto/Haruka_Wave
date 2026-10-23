@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cit2xgb2efpf1"]
+
+[ext_resource type="Texture2D" uid="uid://dei0eem57v55k" path="res://Haruka/images/bg/selectHaruka.png" id="1_gqu5b"]
+[ext_resource type="PackedScene" uid="uid://iyr4b16yb6tl" path="res://Haruka/scenes/HarukaSkinPreviewPanel.tscn" id="2_ebd72"]
+
+[node name="HarukaSelectBg" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1495, 633)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_gqu5b")
+
+[node name="HarukaSkinPreviewPanel" parent="." instance=ExtResource("2_ebd72")]
+layout_mode = 1
+offset_left = 1922.0
+offset_top = 279.0
+offset_right = 1922.0
+offset_bottom = 279.0
+scale = Vector2(1, 1)

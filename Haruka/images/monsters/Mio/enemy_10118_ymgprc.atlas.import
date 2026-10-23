@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://cw1oqq67nlq6f"
+path="res://.godot/imported/enemy_10118_ymgprc.atlas-aa60e1f42affb16b501410d8e66a145c.spatlas"
+
+[deps]
+
+source_file="res://Haruka/images/monsters/Mio/enemy_10118_ymgprc.atlas"
+dest_files=["res://.godot/imported/enemy_10118_ymgprc.atlas-aa60e1f42affb16b501410d8e66a145c.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

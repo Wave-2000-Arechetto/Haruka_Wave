@@ -1,0 +1,63 @@
+{
+  "DARV.talk.HARUKA_CHARACTER_HARUKA.0-0.ancient": "哟，没见过的生面孔。",
+  "DARV.talk.HARUKA_CHARACTER_HARUKA.0-0.next": "回答",
+  "DARV.talk.HARUKA_CHARACTER_HARUKA.0-1.char": "老板，你这里有沙地兽的饲料吗？",
+  "DARV.talk.HARUKA_CHARACTER_HARUKA.0-2.ancient": "我这可不是什么宠物店，不过倒是有不少稀奇物件。",
+  "DARV.talk.HARUKA_CHARACTER_HARUKA.1-0r.ancient": "你又来啦，还是随便拿一件我的收藏吧，但是不可能有饲料的。",
+  "DARV.talk.HARUKA_CHARACTER_HARUKA.2-0r.ancient":"有件事还是想问问你，你头上那顶能发出亮光的大帽子能不能转手给我？",
+  "DARV.talk.HARUKA_CHARACTER_HARUKA.2-0r.next": "回答",
+  "DARV.talk.HARUKA_CHARACTER_HARUKA.2-1r.char": "恐怕不行。",
+
+  "VAKUU.talk.HARUKA_CHARACTER_HARUKA.0-0.ancient": "又是一位从异界来的客人。",
+  "VAKUU.talk.HARUKA_CHARACTER_HARUKA.0-1.char": "又是？",
+  "VAKUU.talk.HARUKA_CHARACTER_HARUKA.1-0r.ancient": "杀死建筑师，你和你的小东西将在这里一辈子不用奔波。",
+  "VAKUU.talk.HARUKA_CHARACTER_HARUKA.1-0r.next": "回答",
+  "VAKUU.talk.HARUKA_CHARACTER_HARUKA.1-1r.char": "你很吵。",
+  "VAKUU.talk.HARUKA_CHARACTER_HARUKA.2-0r.ancient":"我总是看不出来你所求什么东西。但你总会有的，我这里总会有合适你的契约。",
+  
+  "TEZCATARA.talk.HARUKA_CHARACTER_HARUKA.0-0.char": "你身上的火焰，让我感觉像是回到了矿井里。",
+  "TEZCATARA.talk.HARUKA_CHARACTER_HARUKA.0-0.ancient": "哦，特兹卡特拉的火可不像矿井那般黑呀！",
+  "TEZCATARA.talk.HARUKA_CHARACTER_HARUKA.1-0r.char": "我认识一位小厨师，她做的萝卜派特别好吃。",
+  "TEZCATARA.talk.HARUKA_CHARACTER_HARUKA.1-0r.next": "回答",
+  "TEZCATARA.talk.HARUKA_CHARACTER_HARUKA.1-1r.char": "我这儿的点心保准更加地[jitter]温暖[/jitter]。",
+  "TEZCATARA.talk.HARUKA_CHARACTER_HARUKA.2-0r.ancient":"啊，你又来啦！坐坐坐，让特兹卡特拉帮你[jitter]烧掉[/jitter]心中的迷茫。",
+  
+
+  "PAEL.talk.HARUKA_CHARACTER_HARUKA.0-0.ancient": "......",
+  "PAEL.talk.HARUKA_CHARACTER_HARUKA.0-0.char": "别把她挠醒了，沙地兽。",
+  "PAEL.talk.HARUKA_CHARACTER_HARUKA.1-0r.char": "这种在巨兽面前的经历，我以前似乎也经历过。",
+  "PAEL.talk.HARUKA_CHARACTER_HARUKA.1-0r.next": "回答",
+  "PAEL.talk.HARUKA_CHARACTER_HARUKA.1-1r.ancient": "他应该不会像我如今这样安静。",
+  "PAEL.talk.HARUKA_CHARACTER_HARUKA.2-0r.ancient":"你回来啦，探井人。愿我的一部分能够对你有所帮助。",
+  
+
+  "NONUPEIPE.talk.HARUKA_CHARACTER_HARUKA.0-0.ancient": "又是一位风尘仆仆的旅人！瞧你身上的灰尘啊，多可怜，让我为你点缀一下。",
+  "NONUPEIPE.talk.HARUKA_CHARACTER_HARUKA.1-0r.ancient": "你又来啦！请坐，这回我还为你准备好了你的小东西的份。",
+  "NONUPEIPE.talk.HARUKA_CHARACTER_HARUKA.1-1r.char": "谢谢，沙地兽很高兴。",
+  "NONUPEIPE.talk.HARUKA_CHARACTER_HARUKA.2-0r.ancient":"你的小东西和你一样的安静......真是只有教养的小玩意，我喜欢。",
+  "NONUPEIPE.talk.HARUKA_CHARACTER_HARUKA.2-0r.next": "回答",
+  "NONUPEIPE.talk.HARUKA_CHARACTER_HARUKA.2-1r.char": "[i][font_size=22]（莱伊轻轻地抚摸了沙地兽的头顶）[/font_size][/i]",
+
+  "OROBAS.talk.HARUKA_CHARACTER_HARUKA.0-0.ancient": "小兔子！还有可爱的小野兽！也来自泰拉！",
+  "OROBAS.talk.HARUKA_CHARACTER_HARUKA.1-0r.ancient": "矿井？！又热又黑的地方！怎么能干这种活！",
+  "OROBAS.talk.HARUKA_CHARACTER_HARUKA.1-0r.next": "回答",
+  "OROBAS.talk.HARUKA_CHARACTER_HARUKA.1-1r.char": "也许我只是习惯了。",
+  "OROBAS.talk.HARUKA_CHARACTER_HARUKA.2-0r.ancient": "什么？？小东西！被用来测毒气？？太顽强！",
+  "OROBAS.talk.HARUKA_CHARACTER_HARUKA.2-0r.next": "回答",
+  "OROBAS.talk.HARUKA_CHARACTER_HARUKA.2-1r.char": "[i][font_size=22]（沙地兽自豪的昂起了头）[/font_size][/i]\n嗯，沙地兽，很厉害。",
+  
+
+  "TANX.talk.HARUKA_CHARACTER_HARUKA.0-0.ancient": "[b]过来！小兔子和她的宠物！与我进行一次荣耀的对决！[/b]",
+  "TANX.talk.HARUKA_CHARACTER_HARUKA.1-0r.ancient": "[b]用弩箭可不能擦破我半分！来试试这把武器！[/b]",
+  "TANX.talk.HARUKA_CHARACTER_HARUKA.2-0r.ancient":"[b]你，需要武器！小东西，也需要！[/b]",
+  "TANX.talk.HARUKA_CHARACTER_HARUKA.2-0r.next": "回答",
+  "TANX.talk.HARUKA_CHARACTER_HARUKA.2-1r.char": "[i][font_size=22]沙地兽跟着坦克斯嗷嗷直叫。[/font_size][/i]",
+
+  "THE_ARCHITECT.talk.HARUKA_CHARACTER_HARUKA.0-0r.ancient": "你为何登上了这里？",
+  "THE_ARCHITECT.talk.HARUKA_CHARACTER_HARUKA.0-0r.next": "回答",
+  "THE_ARCHITECT.talk.HARUKA_CHARACTER_HARUKA.0-1r.char": "......只是想找到安身之所。",
+  "THE_ARCHITECT.talk.HARUKA_CHARACTER_HARUKA.0-1r.next": "继续",
+  "THE_ARCHITECT.talk.ARCHETTO_CHARACTER_ARCHETTO.0-attack": "Both",
+  "THE_ARCHITECT.talk.HARUKA_CHARACTER_HARUKA.0-2r.ancient": "可叹。"
+}
+  

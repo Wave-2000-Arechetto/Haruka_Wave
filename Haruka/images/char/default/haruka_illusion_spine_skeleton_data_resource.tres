@@ -1,0 +1,8 @@
+[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3 uid="uid://13pl37tna1mn"]
+
+[ext_resource type="SpineAtlasResource" uid="uid://bp4i253vlmgxj" path="res://Haruka/images/char/default/char_4202_haruka_iteration_6.atlas" id="1_ar7yw"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://c0jxu6umjepnf" path="res://Haruka/images/char/default/char_4202_haruka_iteration_642.skel" id="2_41uwa"]
+
+[resource]
+atlas_res = ExtResource("1_ar7yw")
+skeleton_file_res = ExtResource("2_41uwa")

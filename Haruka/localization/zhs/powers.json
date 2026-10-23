@@ -1,0 +1,176 @@
+{
+    "HARUKA_POWER_BUBBLE_POWER.description": "你即将受到超出格挡的攻击时，[gold]浮泡[/gold]破碎并获得5点[gold]格挡[/gold]。",
+    "HARUKA_POWER_BUBBLE_POWER.smartDescription": "你即将受到超出格挡的攻击时，[gold]浮泡[/gold]破碎并获得5点[gold]格挡[/gold]。", 
+    "HARUKA_POWER_BUBBLE_POWER.title": "浮泡",
+
+    "HARUKA_POWER_CALM_POWER.description": "目前情绪为[gold]平静[/gold]。",
+    "HARUKA_POWER_CALM_POWER.smartDescription": "目前情绪为[gold]平静[/gold]。", 
+    "HARUKA_POWER_CALM_POWER.title": "平静",
+
+    "HARUKA_POWER_SCARE_POWER.description": "目前情绪为[purple]恐惧[/purple]。[gold]遥[/gold]和[gold]澪[/gold]造成的伤害增加[purple]恐惧[/purple]层数的数值，但是在[purple]恐惧[/purple]达到3时，受到的所有伤害增加2。\n\n在你的回合开始时，如果你在[purple]恐惧[/purple]3，回复至[blue]平静[/blue]。",
+    "HARUKA_POWER_SCARE_POWER.smartDescription": "目前情绪为[purple]恐惧[/purple]。[gold]遥[/gold]和[gold]澪[/gold]造成的伤害增加[purple]恐惧[/purple]层数的数值，但是在[purple]恐惧[/purple]达到3时，受到的所有伤害增加2。\n\n在你的回合开始时，如果你在[purple]恐惧[/purple]3，回复至[blue]平静[/blue]。", 
+    "HARUKA_POWER_SCARE_POWER.title": "恐惧",
+
+    "HARUKA_POWER_INSPIRED_POWER.description": "目前情绪为[pink]振奋[/pink]。遥获得相当于[pink]振奋[/pink]层数的[gold]集中[/gold]，但是在[pink]振奋[/pink]达到3时，每回合开始时少抽1张牌。\n\n在你的回合开始时，如果你在[pink]振奋[/pink]3，回复至[blue]平静[/blue]。",       
+    "HARUKA_POWER_INSPIRED_POWER.smartDescription": "目前情绪为[pink]振奋[/pink]。遥获得相当于[pink]振奋[/pink]层数的[gold]集中[/gold]，但是在[pink]振奋[/pink]达到3时，每回合开始时少抽1张牌。\n\n在你的回合开始时，如果你在[pink]振奋[/pink]3，回复至[blue]平静[/blue]。", 
+    "HARUKA_POWER_INSPIRED_POWER.title": "振奋",
+
+    "HARUKA_POWER_FINS_POWER.description": "每当[gold]浮泡[/gold]破碎时，使攻击的敌人[gold]浮空[/gold]（不因攻击而破碎的场合目标随机选择）。",
+    "HARUKA_POWER_FINS_POWER.smartDescription": "每当[gold]浮泡[/gold]破碎时，使攻击的敌人[gold]浮空[/gold]（不因攻击而破碎的场合目标随机选择）。", 
+    "HARUKA_POWER_FINS_POWER.title": "游鳞",
+
+    "HARUKA_POWER_FLOAT_POWER.description": "造成的伤害减少50%。\n在受到伤害或回合结束时坠落，受到[blue]10[/blue]点伤害并获得1层[gold]易伤[/gold]。",
+    "HARUKA_POWER_FLOAT_POWER.smartDescription": "造成的伤害减少50%。\n在受到伤害或回合结束时坠落，受到[blue]10[/blue]点伤害并获得1层[gold]易伤[/gold]。", 
+    "HARUKA_POWER_FLOAT_POWER.title": "浮空",
+
+    "HARUKA_POWER_UP_DOWN_POWER.description": "[gold]情绪[/gold]发生变化时，[gold]生成[/gold][blue]{Amount}[/blue]个随机充能球。",
+    "HARUKA_POWER_UP_DOWN_POWER.smartDescription": "[gold]情绪[/gold]发生变化时，[gold]生成[/gold][blue]{Amount}[/blue]个随机充能球。", 
+    "HARUKA_POWER_UP_DOWN_POWER.title": "跌宕起伏",
+
+    "HARUKA_POWER_CHANNEL_EFFECT_POWER.description": "你的回合结束时，将[gold]鼓舞[/gold]至[blue]{Amount}[/blue]。",
+    "HARUKA_POWER_CHANNEL_EFFECT_POWER.smartDescription": "你的回合结束时，将[gold]鼓舞[/gold]至[blue]{Amount}[/blue]。", 
+    "HARUKA_POWER_CHANNEL_EFFECT_POWER.title": "只是节目效果！",
+
+    "HARUKA_POWER_GLADE_POWER.description": "[gold]浮泡[/gold][gold]激发[/gold]时，对所有敌人造成[blue]{Amount}[/blue]点伤害。",
+    "HARUKA_POWER_GLADE_POWER.smartDescription": "[gold]浮泡[/gold][gold]激发[/gold]时，对所有敌人造成[blue]{Amount}[/blue]点伤害。",
+    "HARUKA_POWER_GLADE_POWER.title": "幽隙栖萤",
+
+    "HARUKA_POWER_THOUGH_BUBBLE_POWER.description": "每当[gold]浮泡[/gold][gold]激发[/gold]时，[gold]生成[/gold][blue]{Amount}[/blue]个[gold]玻璃[/gold]充能球。",
+    "HARUKA_POWER_THOUGH_BUBBLE_POWER.smartDescription": "每当[gold]浮泡[/gold][gold]激发[/gold]时，[gold]生成[/gold][blue]{Amount}[/blue]个[gold]玻璃[/gold]充能球。", 
+    "HARUKA_POWER_THOUGH_BUBBLE_POWER.title": "虽为泡影",
+
+    "HARUKA_POWER_COLD_MOON_POWER.description": "[gold]澪[/gold]在本场战斗中获得[blue]{Amount}[/blue]点[gold]力量[/gold]。",
+    "HARUKA_POWER_COLD_MOON_POWER.smartDescription": "[gold]澪[/gold]在本场战斗中获得[blue]{Amount}[/blue]点[gold]力量[/gold]。", 
+    "HARUKA_POWER_COLD_MOON_POWER.title": "冷月",
+
+    "HARUKA_POWER_GLASS_NEXT_TURN_POWER.description": "下回合开始时生成[blue]{Amount}[/blue]个[gold]玻璃[/gold]充能球。",
+    "HARUKA_POWER_GLASS_NEXT_TURN_POWER.smartDescription": "下回合开始时生成[blue]{Amount}[/blue]个[gold]玻璃[/gold]充能球。", 
+    "HARUKA_POWER_GLASS_NEXT_TURN_POWER.title": "下回合玻璃",
+
+    "HARUKA_POWER_BUBBLE_NEXT_TURN_POWER.description": "下[blue]{Amount}[/blue]回合开始时生成1个[gold]浮泡[/gold]充能球。",
+    "HARUKA_POWER_BUBBLE_NEXT_TURN_POWER.smartDescription": "下[blue]{Amount}[/blue]回合开始时生成1个[gold]浮泡[/gold]充能球。", 
+    "HARUKA_POWER_BUBBLE_NEXT_TURN_POWER.title": "下回合浮泡",
+
+    "HARUKA_POWER_FLOWER_ON_HIGH_POWER.description": "[gold]斩[/gold]和[gold]寒晖[/gold]的耗能本场战斗变为[blue]0[/blue]。",
+    "HARUKA_POWER_FLOWER_ON_HIGH_POWER.smartDescription": "[gold]斩[/gold]和[gold]寒晖[/gold]的耗能本场战斗变为[blue]0[/blue]。", 
+    "HARUKA_POWER_FLOWER_ON_HIGH_POWER.title": "高岭之花",
+
+    "HARUKA_POWER_MIO_HP_POWER.description": "[gold]澪[/gold]在本场战斗中获得[blue]{Amount}[/blue]点[gold]最大生命[/gold]。",
+    "HARUKA_POWER_MIO_HP_POWER.smartDescription": "[gold]澪[/gold]在本场战斗中获得[blue]{Amount}[/blue]点[gold]最大生命[/gold]。", 
+    "HARUKA_POWER_MIO_HP_POWER.title": "卫护",
+
+    "HARUKA_POWER_MIO_ENHANCE_POWER.description": "[blue]{Amount}[/blue]回合内，[gold]澪[/gold]格挡的伤害提升至70%。",
+    "HARUKA_POWER_MIO_ENHANCE_POWER.smartDescription": "[blue]{Amount}[/blue]回合内，[gold]澪[/gold]格挡的伤害提升至70%。", 
+    "HARUKA_POWER_MIO_ENHANCE_POWER.title": "强化",
+
+    "HARUKA_POWER_INTO_PLAY_POWER.description": "[gold]情绪[/gold]的效果提高[blue]{Amount}[/blue]倍。",
+    "HARUKA_POWER_INTO_PLAY_POWER.smartDescription": "[gold]情绪[/gold]的效果提高[blue]{Amount}[/blue]倍。", 
+    "HARUKA_POWER_INTO_PLAY_POWER.title": "入戏",
+
+    "HARUKA_POWER_ENTRY_ARRANGEMENTS_POWER.description": "你的回合结束时，[gold]保留[/gold]耗能最高的牌中的其中随机1张，并使其打出前耗能降低1。",
+    "HARUKA_POWER_ENTRY_ARRANGEMENTS_POWER.smartDescription": "你的回合结束时，[gold]保留[/gold]耗能最高的牌中的其中随机1张，并使其打出前耗能降低1。", 
+    "HARUKA_POWER_ENTRY_ARRANGEMENTS_POWER.title": "入场安排",
+
+    "HARUKA_POWER_DETERMINED_POWER.description": "你的[gold]无色攻击牌[/gold]造成的伤害提高[blue]{Amount}[/blue]。",
+    "HARUKA_POWER_DETERMINED_POWER.smartDescription": "你的[gold]无色攻击牌[/gold]造成的伤害提高[blue]{Amount}[/blue]。", 
+    "HARUKA_POWER_DETERMINED_POWER.title": "决意",
+
+    
+
+    "HARUKA_POWER_DANGER_POWER.description": "你的回合结束时，如果你的[gold]情绪[/gold]处于[gold]恐惧[/gold]3，则平复至[gold]平静[/gold]并获得[blue]{Amount}[/blue]点[gold]力量[/gold]。",
+    "HARUKA_POWER_DANGER_POWER.smartDescription": "你的回合结束时，如果你的[gold]情绪[/gold]处于[gold]恐惧[/gold]3，则平复至[gold]平静[/gold]并获得[blue]{Amount}[/blue]点[gold]力量[/gold]。", 
+    "HARUKA_POWER_DANGER_POWER.title": "危机将至...?",
+
+    "HARUKA_POWER_CLIMAX_POWER.description": "你的回合结束时，如果你的[gold]情绪[/gold]处于[gold]振奋[/gold]3，则下回合你的[gold]情绪[/gold]不会[gold]平复[/gold]为[gold]平静[/gold]，且不受[gold]振奋[/gold]3的负面效果影响。",
+    "HARUKA_POWER_CLIMAX_POWER.smartDescription": "你的回合结束时，如果你的[gold]情绪[/gold]处于[gold]振奋[/gold]3，则下回合你的[gold]情绪[/gold]不会[gold]平复[/gold]为[gold]平静[/gold]，且不受[gold]振奋[/gold]3的负面效果影响。", 
+    "HARUKA_POWER_CLIMAX_POWER.title": "高潮迭起",
+
+
+    "HARUKA_POWER_HANDBALL_POWER.description": "每当你进入[gold]平静[/gold]时，[gold]生成[/gold][blue]{Amount}[/blue]个[gold]浮泡[/gold]充能球。",
+    "HARUKA_POWER_HANDBALL_POWER.smartDescription": "每当你进入[gold]平静[/gold]时，[gold]生成[/gold][blue]{Amount}[/blue]个[gold]浮泡[/gold]充能球。", 
+    "HARUKA_POWER_HANDBALL_POWER.title": "手鞠声声",
+
+    "HARUKA_POWER_HIME_POWER.description": "回合开始时，如果累计[gold]生成[/gold]过12个[gold]浮泡[/gold]充能球，获得[blue]{Amount}[/blue]张[gold]沫碎梦回[/gold]并移除此能力。",
+    "HARUKA_POWER_HIME_POWER.smartDescription": "回合开始时，如果累计[gold]生成[/gold]过12个[gold]浮泡[/gold]充能球，获得[blue]{Amount}[/blue]张[gold]沫碎梦回[/gold]并移除此能力。", 
+    "HARUKA_POWER_HIME_POWER.title": "公主的赐福",
+
+    "HARUKA_POWER_SCARE_TURN_END_POWER.description": "你的回合结束时，[gold]惊吓[/gold][blue]{Amount}[/blue]。",
+    "HARUKA_POWER_SCARE_TURN_END_POWER.smartDescription": "你的回合结束时，[gold]惊吓[/gold][blue]{Amount}[/blue]。", 
+    "HARUKA_POWER_SCARE_TURN_END_POWER.title": "特技",
+
+    "HARUKA_POWER_COERCION_POWER.description": "本回合获得[blue]{Amount}[/blue]点[gold]力量[/gold]。",
+    "HARUKA_POWER_COERCION_POWER.smartDescription": "本回合获得[blue]{Amount}[/blue]点[gold]力量[/gold]。", 
+    "HARUKA_POWER_COERCION_POWER.title": "威压",
+
+    "HARUKA_POWER_COLORLESS_FREE_POWER_POWER.description": "下[blue]{Amount}[/blue]张[gold]无色牌[/gold]或[gold]衍生牌[/gold]的耗能降至0。",
+    "HARUKA_POWER_COLORLESS_FREE_POWER.smartDescription": "下[blue]{Amount}[/blue]张[gold]无色牌[/gold]或[gold]衍生牌[/gold]的耗能降至0。",  
+    "HARUKA_POWER_COLORLESS_FREE_POWER.title": "无色减少",
+
+    "HARUKA_POWER_SCENE_POWER.description": "每当你抽12张牌时，生成[blue]{Amount}[/blue]个[gold]浮泡[/gold]充能球。",
+    "HARUKA_POWER_SCENE_POWER.smartDescription": "每当你抽12张牌时，生成[blue]{Amount}[/blue]个[gold]浮泡[/gold]充能球。", 
+    "HARUKA_POWER_SCENE_POWER.title": "布景",
+
+    "HARUKA_POWER_JOYFUL_POWER.description": "进入[gold]平静[/gold]时，抽[blue]{Amount}[/blue]张牌。",
+    "HARUKA_POWER_JOYFUL_POWER.smartDescription": "进入[gold]平静[/gold]时，抽[blue]{Amount}[/blue]张牌。", 
+    "HARUKA_POWER_JOYFUL_POWER.title": "平凡",
+
+    "HARUKA_POWER_IN_NIGHT_POWER.description": "[gold]花火[/gold]充能球本场对战为所有玩家抽牌。",
+    "HARUKA_POWER_IN_NIGHT_POWER.smartDescription": "[gold]花火[/gold]充能球本场对战为所有玩家抽牌。",
+    "HARUKA_POWER_IN_NIGHT_POWER.title": "长夜微光",
+
+    "HARUKA_POWER_PROTECT_TARGET_POWER.description": "只要{Applier}的[gold]澪[/gold]在场，你受到的[gold]攻击伤害[/gold]减半。",
+    "HARUKA_POWER_PROTECT_TARGET_POWER.smartDescription": "只要{Applier}的[gold]澪[/gold]在场，你受到的[gold]攻击伤害[/gold]减半。", 
+    "HARUKA_POWER_PROTECT_TARGET_POWER.title": "保护目标",
+
+    "HARUKA_POWER_CO_PERFORMANCE_POWER.description": "你的回合开始时，将[blue]{Amount}[/blue]张[gold]双人舞[/gold]放入手牌。",
+    "HARUKA_POWER_CO_PERFORMANCE_POWER.smartDescription": "你的回合开始时，将[blue]{Amount}[/blue]张[gold]双人舞[/gold]放入手牌。", 
+    "HARUKA_POWER_CO_PERFORMANCE_POWER.title": "共演",
+
+    "HARUKA_POWER_CO_PERFORMANCE_UPGRADE_POWER.description": "你的回合开始时，将[blue]{Amount}[/blue]张[gold]双人舞+[/gold]放入手牌。",
+    "HARUKA_POWER_CO_PERFORMANCE_UPGRADE_POWER.smartDescription": "你的回合开始时，将[blue]{Amount}[/blue]张[gold]双人舞+[/gold]放入手牌。", 
+    "HARUKA_POWER_CO_PERFORMANCE_UPGRADE_POWER.title": "共演+",
+
+    "HARUKA_POWER_APPLY_HASUKE_POWER.description": "每回合第[blue]{Amount}[/blue]次生成[gold]无色牌[/gold]时，为其[purple]附魔：[/purple][gold]播种[/gold]。",
+    "HARUKA_POWER_APPLY_HASUKE_POWER.smartDescription": "每回合第[blue]{Amount}[/blue]次生成[gold]无色牌[/gold]时，为其[purple]附魔：[/purple][gold]播种[/gold]。", 
+    "HARUKA_POWER_APPLY_HASUKE_POWER.title": "叶助",
+
+    "HARUKA_POWER_HASUKE_POWER.description": "下[blue]{Amount}[/blue]次生成[gold]无色牌[/gold]时，为其[purple]附魔：[/purple][gold]播种[/gold]。",
+    "HARUKA_POWER_HASUKE_POWER.smartDescription": "下[blue]{Amount}[/blue]次生成[gold]无色牌[/gold]时，为其[purple]附魔：[/purple][gold]播种[/gold]。", 
+    "HARUKA_POWER_HASUKE_POWER.title": "叶助",
+
+    "HARUKA_POWER_TWO_POWER_HARUKA.description": "在进入后造成1次不小于[blue]20[/blue]的伤害后成功，现已造成[blue]{PerformanceAmount:diff()}[/blue]次伤害。",
+    "HARUKA_POWER_TWO_POWER_HARUKA.smartDescription": "在进入后造成1次不小于[blue]20[/blue]的伤害后成功，现已造成[blue]{PerformanceAmount:diff()}[/blue]次伤害。", 
+    "HARUKA_POWER_TWO_POWER_HARUKA.title": "第二阶段：预热",
+
+    "HARUKA_POWER_THREE_POWER_HARUKA.description": "在进入后造成[blue]50[/blue]点伤害后成功，现已造成[blue]{PerformanceAmount:diff()}[/blue]点伤害。",
+    "HARUKA_POWER_THREE_POWER_HARUKA.smartDescription": "在进入后造成[blue]50[/blue]点伤害后成功，现已造成[blue]{PerformanceAmount:diff()}[/blue]点伤害。", 
+    "HARUKA_POWER_THREE_POWER_HARUKA.title": "第三阶段：高潮",
+
+    "HARUKA_POWER_SPICY_FOOD_POWER.description": "[gold]沙地兽[/gold]本场战斗内打出后获得[blue]{Amount}[/blue]层[gold]活力[/gold]。",
+    "HARUKA_POWER_SPICY_FOOD_POWER.smartDescription": "[gold]沙地兽[/gold]本场战斗内打出后获得[blue]{Amount}[/blue]层[gold]活力[/gold]。", 
+    "HARUKA_POWER_SPICY_FOOD_POWER.title": "劲辣饲料",
+
+    "HARUKA_POWER_BONE_FOOD_POWER.description": "[gold]沙地兽[/gold]本场战斗内打出后获得[blue]{Amount}[/blue]层[gold]荆棘[/gold]。",
+    "HARUKA_POWER_BONE_FOOD_POWER.smartDescription": "[gold]沙地兽[/gold]本场战斗内打出后获得[blue]{Amount}[/blue]层[gold]荆棘[/gold]。", 
+    "HARUKA_POWER_BONE_FOOD_POWER.title": "骨质饲料",
+
+    "HARUKA_POWER_TOUGH_FOOD_POWER.description": "[gold]沙地兽[/gold]本场战斗内打出后获得[blue]{Amount}[/blue]点[gold]格挡[/gold]。", 
+    "HARUKA_POWER_TOUGH_FOOD_POWER.smartDescription": "[gold]沙地兽[/gold]本场战斗内打出后获得[blue]{Amount}[/blue]点[gold]格挡[/gold]。", 
+    "HARUKA_POWER_TOUGH_FOOD_POWER.title": "韧皮饲料",
+
+
+    "HARUKA_POWER_PIONEER_POWER.description": "如果你这回合不受到伤害，在下回合开始时，将[gold]下矿[/gold]放入其他玩家的手牌。\n现有已受到[blue]{DamageAmount:diff()}[/blue]点[gold]伤害[/gold]。",
+    "HARUKA_POWER_PIONEER_POWER.smartDescription": "如果你这回合不受到伤害，在下回合开始时，将[gold]下矿[/gold]放入其他玩家的手牌。\n现有已受到[blue]{DamageAmount:diff()}[/blue]点[gold]伤害[/gold]。", 
+    "HARUKA_POWER_PIONEER_POWER.title": "矿区先锋",
+
+    "HARUKA_POWER_IN_DARK_POWER.description": "下[blue]{PassiveAmount:diff()}[/blue]张[gold]伏击[/gold]牌额外无条件触发1次[gold]伏击成功[/gold]效果。",
+    "HARUKA_POWER_IN_DARK_POWER.smartDescription": "下[blue]{PassiveAmount:diff()}[/blue]张[gold]伏击[/gold]牌额外无条件触发1次[gold]伏击成功[/gold]效果。", 
+    "HARUKA_POWER_IN_DARK_POWER.title": "敌明我暗"
+
+
+    
+
+
+
+
+}

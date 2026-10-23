@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0of6dgfa7rej"]
+
+[ext_resource type="Script" uid="uid://i58qm02racmy" path="res://Scripts/Character/HarukaCharacterVisuals.cs" id="1_k73yx"]
+[ext_resource type="SpineSkeletonDataResource" uid="uid://c2ay8m5xd6wme" path="res://Haruka/images/char/default/haruka_spine_skeleton_data_resource.tres" id="2_gqa1r"]
+
+[node name="HarukaModel" type="Node2D"]
+script = ExtResource("1_k73yx")
+
+[node name="Visuals" type="SpineSprite" parent="."]
+skeleton_data_res = ExtResource("2_gqa1r")
+preview_skin = "default"
+preview_animation = "Idle"
+preview_frame = false
+preview_time = 0.0
+unique_name_in_owner = true
+scale = Vector2(0.4, 0.4)
+
+[node name="Bounds" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+offset_left = -103.0
+offset_top = -305.0
+offset_right = 92.0
+offset_bottom = 40.0
+
+[node name="IntentPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -350)
+
+[node name="CenterPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -200)

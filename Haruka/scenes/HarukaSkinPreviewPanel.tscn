@@ -1,0 +1,83 @@
+[gd_scene load_steps=10 format=3 uid="uid://iyr4b16yb6tl"]
+
+[ext_resource type="Script" uid="uid://bdqg8axm425fw" path="res://Haruka/scenes/HarukaSkinPreviewPanel.cs" id="1_y4ayr"]
+[ext_resource type="Texture2D" uid="uid://dfycg121u6qdd" path="res://Haruka/scenes/button/left_arrow.png" id="2_2ibel"]
+[ext_resource type="Texture2D" uid="uid://cdml6uncfqs2b" path="res://Haruka/scenes/button/left_arrow_pressed.png" id="3_exnrj"]
+[ext_resource type="Texture2D" uid="uid://bom0578sxp148" path="res://Haruka/scenes/button/left_arrow_hover.png" id="4_3fatc"]
+[ext_resource type="Texture2D" uid="uid://dgakmp3dwokkk" path="res://Haruka/scenes/button/right_arrow.png" id="5_kyevp"]
+[ext_resource type="Texture2D" uid="uid://bb7sjxwja0jl3" path="res://Haruka/scenes/button/right_arrow_pressed.png" id="6_ba4va"]
+[ext_resource type="Texture2D" uid="uid://dbsci0yrvjoqo" path="res://Haruka/scenes/button/right_arrow_hover.png" id="7_1apxe"]
+[ext_resource type="PackedScene" uid="uid://b0of6dgfa7rej" path="res://Haruka/scenes/HarukaModel.tscn" id="8_lxbdb"]
+[ext_resource type="PackedScene" uid="uid://ckkspvhxsi7on" path="res://Haruka/scenes/HarukaIllusionModel.tscn" id="9_jdhu1"]
+
+[node name="HarukaSkinPreviewPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -576.0
+offset_top = 160.0
+offset_right = -1648.0
+offset_bottom = -448.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(9.9, 9.9)
+script = ExtResource("1_y4ayr")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -568.02026
+offset_top = 124.14141
+offset_right = -488.02026
+offset_bottom = 167.76349
+scale = Vector2(9.9, 9.9)
+
+[node name="HarukaLeftBtn" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = -565.0
+offset_top = 346.0
+offset_right = -437.0
+offset_bottom = 474.0
+texture_normal = ExtResource("2_2ibel")
+texture_pressed = ExtResource("3_exnrj")
+texture_hover = ExtResource("4_3fatc")
+
+[node name="HarukaRightBtn" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 349.0
+offset_right = 212.0
+offset_bottom = 477.0
+texture_normal = ExtResource("5_kyevp")
+texture_pressed = ExtResource("6_ba4va")
+texture_hover = ExtResource("7_1apxe")
+
+[node name="HarukaSkinNameLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = -242.0
+offset_top = 496.0
+offset_right = -114.0
+offset_bottom = 519.0
+scale = Vector2(2, 2)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+layout_mode = 0
+offset_left = -227.0
+offset_top = 275.0
+offset_right = -99.0
+offset_bottom = 403.0
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(128, 128)
+render_target_update_mode = 4
+
+[node name="Node2D" type="Node2D" parent="SubViewportContainer/SubViewport"]
+
+[node name="HarukaModel" parent="." instance=ExtResource("8_lxbdb")]
+position = Vector2(-183, 487)
+
+[node name="HarukaIllusionModel" parent="." instance=ExtResource("9_jdhu1")]
+visible = false
+position = Vector2(-183, 487)

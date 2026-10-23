@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dg342krey6kep"]
+
+[ext_resource type="Texture2D" uid="uid://c5jf1ycicqdbv" path="res://Haruka/images/orbs/bubble_orb.png" id="1_x3haw"]
+
+[node name="BubbleOrb" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+texture = ExtResource("1_x3haw")
+
+[node name="SpineSkeleton" type="SpineSprite" parent="."]

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4kr8tnafdyxd"]
+
+[ext_resource type="SpineSkeletonDataResource" uid="uid://yxpqeq5bx5ds" path="res://Haruka/images/char/default/build_haruka_illusion_spine_skeleton_data_resource.tres" id="1_sn03q"]
+
+[node name="HarukaIllusionMechantModel" type="SpineSprite"]
+skeleton_data_res = ExtResource("1_sn03q")
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0

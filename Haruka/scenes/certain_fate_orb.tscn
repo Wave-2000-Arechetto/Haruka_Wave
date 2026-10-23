@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://chxqs5378ihdp"]
+
+[ext_resource type="Texture2D" uid="uid://8qnkoobsmm3k" path="res://Haruka/images/orbs/certain_fate_orb.png" id="1_8vl58"]
+
+[node name="CretainFateOrb" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+texture = ExtResource("1_8vl58")
+
+[node name="SpineSkeleton" type="SpineSprite" parent="."]

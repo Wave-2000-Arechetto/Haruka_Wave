@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://c0knrs020o1x6"
+path="res://.godot/imported/char_4202_haruka.atlas-5bc594221a6501a45826f376081a8c51.spatlas"
+
+[deps]
+
+source_file="res://Haruka/images/char/default/char_4202_haruka.atlas"
+dest_files=["res://.godot/imported/char_4202_haruka.atlas-5bc594221a6501a45826f376081a8c51.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dr8w5ljot0r36"]
+
+[ext_resource type="Texture2D" uid="uid://c4ty6fgthicjc" path="res://Haruka/images/orbs/spotlight_orb.png" id="1_6emeq"]
+
+[node name="SpotlightOrb" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+texture = ExtResource("1_6emeq")
+
+[node name="SpineSkeleton" type="SpineSprite" parent="."]

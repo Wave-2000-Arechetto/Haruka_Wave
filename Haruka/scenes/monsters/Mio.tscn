@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://b35tbg1e5c3eh"]
+
+[ext_resource type="Script" uid="uid://i58qm02racmy" path="res://Scripts/Character/HarukaCharacterVisuals.cs" id="1_n4aow"]
+[ext_resource type="SpineSkeletonDataResource" uid="uid://bpq11w1wc8un3" path="res://Haruka/images/monsters/Mio/Mio.tres" id="2_n4aow"]
+
+[node name="Mio" type="Node2D"]
+script = ExtResource("1_n4aow")
+
+[node name="Visuals" type="SpineSprite" parent="."]
+skeleton_data_res = ExtResource("2_n4aow")
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0
+unique_name_in_owner = true
+scale = Vector2(0.4, 0.4)
+
+[node name="Bounds" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+offset_left = -92.0
+offset_top = -315.0
+offset_right = 85.0
+offset_bottom = 40.0
+
+[node name="IntentPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -350)
+
+[node name="CenterPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -150)

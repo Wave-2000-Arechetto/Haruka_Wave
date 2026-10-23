@@ -1,0 +1,30 @@
+{
+    
+
+    "HARUKA_KEYWORD_BUBBLE.description": "你即将受到超出格挡的攻击时，[gold]浮泡[/gold]会[gold]激发[/gold]并获得相当于层数的[gold]格挡[/gold]。",
+    "HARUKA_KEYWORD_BUBBLE.title": "浮泡",
+
+    "HARUKA_KEYWORD_SCARE.title":"惊吓",
+    "HARUKA_KEYWORD_SCARE.description":"[gold]情绪值[/gold]减少相应的数值。",
+
+    "HARUKA_KEYWORD_INSPIRE.title":"鼓舞",
+    "HARUKA_KEYWORD_INSPIRE.description":"[gold]情绪值[/gold]增加相应的数值。",
+
+    "HARUKA_KEYWORD_CALM.title":"平复",
+    "HARUKA_KEYWORD_CALM.description":"[gold]情绪值[/gold]向0增加或减少相应的数值。",
+
+    "HARUKA_KEYWORD_CHANNEL_ON_FRONT.title":"在最前方生成",
+    "HARUKA_KEYWORD_CHANNEL_ON_FRONT.description":"目前已有的充能球会向后移动，在最后方的充能球会被[gold]激发[/gold]。",
+
+    "HARUKA_KEYWORD_MIO.title":"澪",
+    "HARUKA_KEYWORD_MIO.description":"（HP 12/12）\n[gold]澪[/gold]在场时，为[gold]遥[/gold]分担一半的生命损失。在场时如果重新加入战场，回复所有生命值。",
+
+
+
+    
+    "HARUKA_KEYWORD_FLOAT.title":"浮空",
+    "HARUKA_KEYWORD_FLOAT.description":"造成的伤害减少50%。\n受到攻击伤害或在其回合结束时坠地，受到[blue]10[/blue]点伤害并获得1层[gold]易伤[/gold]。"
+    
+    
+    
+}

@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://dklktx60681q2"
+path="res://.godot/imported/enemy_10118_ymgprc42.skel-cfed6686fe39ac1f6d2838d1b88e67f5.spskel"
+
+[deps]
+
+source_file="res://Haruka/images/monsters/Mio/enemy_10118_ymgprc42.skel"
+dest_files=["res://.godot/imported/enemy_10118_ymgprc42.skel-cfed6686fe39ac1f6d2838d1b88e67f5.spskel"]
+
+[params]
+

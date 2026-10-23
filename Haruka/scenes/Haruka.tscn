@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcackxswog5bj"]
+
+[ext_resource type="Texture2D" uid="uid://c24b130b8pben" path="res://haruka.png" id="1_xiipk"]
+
+[node name="Haruka" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(24.968504, 23.9375)
+scale = Vector2(0.5344488, 0.5344488)
+texture = ExtResource("1_xiipk")

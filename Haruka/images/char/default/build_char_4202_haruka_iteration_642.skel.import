@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://b2mnjte7osck7"
+path="res://.godot/imported/build_char_4202_haruka_iteration_642.skel-5e576ee79cf5815337d1fdc3c7400af2.spskel"
+
+[deps]
+
+source_file="res://Haruka/images/char/default/build_char_4202_haruka_iteration_642.skel"
+dest_files=["res://.godot/imported/build_char_4202_haruka_iteration_642.skel-5e576ee79cf5815337d1fdc3c7400af2.spskel"]
+
+[params]
+

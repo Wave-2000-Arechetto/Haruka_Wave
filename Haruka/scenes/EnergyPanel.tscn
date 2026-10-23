@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://diha83gy7d6nj"]
+
+[ext_resource type="Texture2D" path="res://Haruka/images/energy_haruka_big.png" id="1_380j0"]
+
+[node name="EnergyPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EnergyVfxBack" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="Layers" type="Control" parent="."]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Layer1" type="TextureRect" parent="Layers"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -8.0
+offset_right = 149.0
+offset_bottom = 118.0
+texture = ExtResource("1_380j0")
+
+[node name="RotationLayers" type="Control" parent="Layers"]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_top = 1.0
+offset_right = 40.0
+offset_bottom = 41.0
+
+[node name="EnergyVfxFront" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+offset_left = 56.0
+offset_top = 39.0
+offset_right = 111.0
+offset_bottom = 97.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0.9269192, 0.35131398, 0.30065164, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 16
+theme_override_constants/shadow_outline_size = 16
+theme_override_font_sizes/font_size = 36
+text = "3/3"

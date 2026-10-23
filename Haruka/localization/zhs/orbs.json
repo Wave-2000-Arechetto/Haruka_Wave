@@ -1,0 +1,17 @@
+{
+    "HARUKA_ORB_BUBBLE_ORB.description": "[gold]激发[/gold]时可以获得格挡。",
+    "HARUKA_ORB_BUBBLE_ORB.smartDescription": "每回合结束时，这个充能球的层数减少2。\n[gold]被动：[/gold]本充能球的层数+[blue]{Passive}[/blue]。\n[gold]激发：[/gold]获得[blue]{Evoke}[/blue]点[gold]格挡[/gold]（不受[gold]集中[/gold]影响）。\n每次受到攻击时，如果伤害不能完全被[gold]格挡[/gold]且它是[gold]最前面[/gold]的充能球，[gold]激发[/gold]。",
+    "HARUKA_ORB_BUBBLE_ORB.title": "浮泡",
+
+    "HARUKA_ORB_FIREWORK_ORB.description": "[gold]被动[/gold]和[gold]激发[/gold]时会消耗层数抽牌。(不受[gold]集中[/gold]影响)",
+    "HARUKA_ORB_FIREWORK_ORB.smartDescription": "初始拥有4层被动层数。\n[gold]被动：[/gold]抽1张牌，减少1层被动层数。\n[gold]激发：[/gold]抽[gold]被动[/gold]层数+1张牌。",
+    "HARUKA_ORB_FIREWORK_ORB.title": "花火",
+
+    "HARUKA_ORB_SPOTLIGHT_ORB.description": "[gold]被动[/gold]时会造成伤害，[gold]激发[/gold]时给予[gold]遥[/gold]和[gold]澪[/gold]提供活力。",
+    "HARUKA_ORB_SPOTLIGHT_ORB.smartDescription": "[gold]被动：[/gold]造成[blue]{Passive}[/blue]点[gold]伤害[/gold]两次。\n[gold]激发：[/gold][gold]遥[/gold]和[gold]澪[/gold]获得[blue]{Evoke}[/blue]点[gold]活力[/gold]。",
+    "HARUKA_ORB_SPOTLIGHT_ORB.title": "聚光灯",
+
+    "HARUKA_ORB_CERTAIN_FATE_ORB.description": "[gold]被动[/gold]和[gold]激发[/gold]时会加速[gold]激发[/gold]充能球。",
+    "HARUKA_ORB_CERTAIN_FATE_ORB.smartDescription": "[gold]被动：[/gold]如果最前面的充能球不为[gold]“某种天命”[/gold]，将其[gold]激发[/gold]，并生成1个它的复制。\n\n[gold]激发：[/gold]如果[gold]澪[/gold]在场，[gold]激发[/gold]该充能球后方的所有充能球，如果不为[gold]“某种天命”[/gold]，各[gold]在最前方生成[/gold]1个它的复制。",
+    "HARUKA_ORB_CERTAIN_FATE_ORB.title": "“某种天命”"
+}

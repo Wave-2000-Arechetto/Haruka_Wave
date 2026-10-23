@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://clu8cnpuf66x1"]
+
+[ext_resource type="Texture2D" uid="uid://bkr6rwgno2h0g" path="res://Haruka/images/orbs/firework_orb.png" id="1_e56xx"]
+
+[node name="FireworkOrb" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+texture = ExtResource("1_e56xx")
+
+[node name="SpineSkeleton" type="SpineSprite" parent="."]

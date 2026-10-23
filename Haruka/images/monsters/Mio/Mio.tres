@@ -1,0 +1,8 @@
+[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3 uid="uid://bpq11w1wc8un3"]
+
+[ext_resource type="SpineAtlasResource" uid="uid://cw1oqq67nlq6f" path="res://Haruka/images/monsters/Mio/enemy_10118_ymgprc.atlas" id="1_v2eat"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://dklktx60681q2" path="res://Haruka/images/monsters/Mio/enemy_10118_ymgprc42.skel" id="2_5xra1"]
+
+[resource]
+atlas_res = ExtResource("1_v2eat")
+skeleton_file_res = ExtResource("2_5xra1")
