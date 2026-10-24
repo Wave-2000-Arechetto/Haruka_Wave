@@ -25,7 +25,7 @@ namespace Haruka.Scripts.Cards.Token
         private const TargetType targetType = TargetType.AnyEnemy;
         private const bool shouldShowInCardLibrary = true;
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(8, ValueProp.Move)];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move)];
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => [
         

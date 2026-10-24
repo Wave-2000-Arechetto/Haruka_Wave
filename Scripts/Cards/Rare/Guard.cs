@@ -21,21 +21,21 @@ using Haruka.Scripts.Enums;
 
 
 
-namespace Haruka.Scripts.Cards.Uncommon
+namespace Haruka.Scripts.Cards.Rare
 {
     [RegisterCard(typeof(HarukaCardPool))]
     public class Guard : HarukaCard
     {
         private const int energyCost = 1;
         private const CardType type = CardType.Power;
-        private const CardRarity rarity = CardRarity.Uncommon;
+        private const CardRarity rarity = CardRarity.Rare;
         private const TargetType targetType = TargetType.Self;
         private const bool shouldShowInCardLibrary = true;
 
         
         protected override IEnumerable<DynamicVar> CanonicalVars =>
 [
-    new PowerVar<MioEnhancePower>(1),
+    new PowerVar<MioEnhancePower>(2),
     new PowerVar<MioHpPower>(4),
 ];
 

@@ -190,35 +190,27 @@ public class Mio : ModMinionTemplate
 
     public decimal _BlockedHpLostBeforeOsty;
 
+    public bool IsMioReduced = false;
+
     public override decimal ModifyHpLostAfterOsty(Creature target, decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource)
     {
         if (target == base.Creature.PetOwner?.Creature
-        && base.Creature.IsAlive
-        && dealer != null
-        && dealer.Side == CombatSide.Enemy)
+        && Creature.IsAlive)
         {
-            if (target.HasPower<MioEnhancePower>())
+            _BlockedHpLostBeforeOsty = 0.5m * amount;
+            if (_BlockedHpLostBeforeOsty > 0)
             {
-                if (amount > Creature.CurrentHp)
-                {
-                    _BlockedHpLostBeforeOsty = Creature.CurrentHp;
-                    return amount - Creature.CurrentHp;
-                }
-                else
-                {
-                    _BlockedHpLostBeforeOsty = amount;
-                    return 0m;
-                }
-            }
-            else
-            {
-                _BlockedHpLostBeforeOsty = 0.5m * amount;
-                return 0.5m * amount;
+                IsMioReduced = true;
             }
             
+            return 0.5m * amount;
         }
         return base.ModifyHpLostBeforeOsty(target, amount, props, dealer, cardSource);
     }
+
+
+    
+
 
 
     public override async Task AfterModifyingHpLostAfterOsty()

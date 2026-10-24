@@ -169,10 +169,13 @@
 	"HARUKA_CARD_POPULAR_SONG.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n触发最前方的充能球的[gold]被动[/gold]{Time:diff()}次。",
 
 	"HARUKA_CARD_GUARD.title": "卫护",
-	"HARUKA_CARD_GUARD.description":"[gold]澪[/gold]入场并获得{MioHpPower:diff()}点[gold]最大生命[/gold]。\n{MioEnhancePower:diff()}回合内[gold]澪[/gold]抵挡全部的未格挡伤害。",
+	"HARUKA_CARD_GUARD.description":"[gold]澪[/gold]入场并获得{MioHpPower:diff()}点[gold]最大生命[/gold]。\n[gold]澪[/gold]抵挡伤害时，使[gold]澪[/gold]和[gold]遥[/gold]获得{MioEnhancePower:diff()}点[gold]格挡[/gold]。",
 
 	"HARUKA_CARD_RESERVED.title": "矜持",
 	"HARUKA_CARD_RESERVED.description":"本回合保留你的手牌。\n[gold]生成[/gold]1个[gold]浮泡[/gold]充能球。",
+
+	"HARUKA_CARD_BUBBLE_WAVE.title": "浮光",
+	"HARUKA_CARD_BUBBLE_WAVE.description":"[gold]生成[/gold]{IfUpgraded:show:X+1|X}个[gold]浮泡[/gold]充能球。",
 
 	"HARUKA_CARD_EXTRAORDINARY.title": "大放异彩",
 	"HARUKA_CARD_EXTRAORDINARY.description":"获得{Block:diff()}点[gold]格挡[/gold]。\n[gold]生成[/gold]2个[gold]聚光灯[/gold]充能球。",
@@ -310,9 +313,11 @@
 	"HARUKA_CARD_CO_PERFORMANCE.description": "你的回合开始时，将1张[gold]双人舞[/gold]放入手牌。",
 
 	"HARUKA_CARD_GOOD_OPPONENT.title":"好敌手",
-	"HARUKA_CARD_GOOD_OPPONENT.description": "[gold]澪[/gold]入场。\n在下个回合，[gold]澪[/gold]对其造成的伤害翻倍。 ",
+	"HARUKA_CARD_GOOD_OPPONENT.description": "[gold]澪[/gold]入场。\n在下个回合，[gold]澪[/gold]对其造成的伤害翻倍。",
 
-	
+	"HARUKA_CARD_CELEBRITY_EFFECT.title":"明星效应",
+	"HARUKA_CARD_CELEBRITY_EFFECT.description": "本场战斗你每[gold]生成[/gold]过1种充能球，本回合获得1点[gold]集中[/gold]。",
+
 	"HARUKA_CARD_HIGASHI.title":"不夜御机",
 	"HARUKA_CARD_HIGASHI.description": "依次序[gold]生成[/gold][gold]浮泡[/gold]，[gold]花火[/gold]，[gold]聚光灯[/gold]充能球各一个。\n触发所有充能球的被动效果{Time:diff()}次。",
 

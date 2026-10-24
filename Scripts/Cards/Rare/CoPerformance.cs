@@ -13,6 +13,7 @@ using Haruka.Scripts.UI;
 using MegaCrit.Sts2.Core.HoverTips;
 using Haruka.Scripts.Enums;
 using Test.Scripts;
+using Haruka.Scripts.Cards.Uncommon;
 
 
 

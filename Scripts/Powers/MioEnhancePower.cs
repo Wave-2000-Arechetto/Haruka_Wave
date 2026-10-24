@@ -1,4 +1,5 @@
 using HarmonyLib;
+using Haruka.Scripts.Monster;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
@@ -25,10 +26,22 @@ public class MioEnhancePower : AbstractHarukaPower
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
 
-    public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
+    public override async Task AfterDamageReceivedLate(PlayerChoiceContext choiceContext, Creature target, DamageResult result, ValueProp props, Creature? dealer, CardModel? cardSource)
     {
-        await PowerCmd.Decrement(this);
+        if (target == Owner)   
+        {
+            var mio = Owner.Pets.FirstOrDefault(c => c.Monster is Mio);
+            if (mio != null)
+            {
+                await CreatureCmd.GainBlock(mio, Amount, ValueProp.Unpowered, null);
+                await CreatureCmd.GainBlock(Owner, Amount, ValueProp.Unpowered, null);
+            }
+            
+            
+            
+        }
     }
+
 
 
     

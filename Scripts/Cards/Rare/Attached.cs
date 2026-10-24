@@ -54,7 +54,8 @@ namespace Haruka.Scripts.Cards.Rare
         {
             if (!_attachedCardTypes.Contains(cardPlay.Card.Type) 
             && (cardPlay.Card.Type == CardType.Skill || cardPlay.Card.Type == CardType.Attack || cardPlay.Card.Type == CardType.Power)
-            && cardPlay.Card != this)
+            && cardPlay.Card != this
+            && cardPlay.Card.Pile?.Type != PileType.Hand)
             {
                 _attachedCardTypes.Add(cardPlay.Card.Type);
                 await CardPileCmd.Add(this, PileType.Hand);

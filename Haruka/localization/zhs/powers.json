@@ -15,6 +15,14 @@
     "HARUKA_POWER_INSPIRED_POWER.smartDescription": "目前情绪为[pink]振奋[/pink]。[gold]遥[/gold]获得相当于[pink]振奋[/pink]层数的[gold]集中[/gold]，但是在[pink]振奋[/pink]达到3时，每回合开始时少抽1张牌。\n\n在你的回合开始时，如果你在[pink]振奋[/pink]3，回复至[blue]平静[/blue]。", 
     "HARUKA_POWER_INSPIRED_POWER.title": "振奋",
 
+    "HARUKA_POWER_WHRILING_DANCE_POWER.description": "本回合获得[blue]{Amount}[/blue]点[gold]集中[/gold]。",
+    "HARUKA_POWER_WHRILING_DANCE_POWER.smartDescription": "本回合获得[blue]{Amount}[/blue]点[gold]集中[/gold]。", 
+    "HARUKA_POWER_WHRILING_DANCE_POWER.title": "旋转舞步",
+
+    "HARUKA_POWER_CELEBRITY_POWER.description": "本回合获得[blue]{Amount}[/blue]点[gold]集中[/gold]。",
+    "HARUKA_POWER_CELEBRITY_POWER.smartDescription": "本回合获得[blue]{Amount}[/blue]点[gold]集中[/gold]。", 
+    "HARUKA_POWER_CELEBRITY_POWER.title": "明星效应",
+
     "HARUKA_POWER_FINS_POWER.description": "每当[gold]浮泡[/gold]破碎时，使攻击的敌人[gold]浮空[/gold]（不因攻击而破碎的场合目标随机选择）。",
     "HARUKA_POWER_FINS_POWER.smartDescription": "每当[gold]浮泡[/gold]破碎时，使攻击的敌人[gold]浮空[/gold]（不因攻击而破碎的场合目标随机选择）。", 
     "HARUKA_POWER_FINS_POWER.title": "游鳞",
@@ -59,9 +67,9 @@
     "HARUKA_POWER_MIO_HP_POWER.smartDescription": "[gold]澪[/gold]在本场战斗中获得[blue]{Amount}[/blue]点[gold]最大生命[/gold]。", 
     "HARUKA_POWER_MIO_HP_POWER.title": "卫护",
 
-    "HARUKA_POWER_MIO_ENHANCE_POWER.description": "[blue]{Amount}[/blue]回合内，[gold]澪[/gold]格挡的伤害提升至70%。",
-    "HARUKA_POWER_MIO_ENHANCE_POWER.smartDescription": "[blue]{Amount}[/blue]回合内，[gold]澪[/gold]格挡的伤害提升至70%。", 
-    "HARUKA_POWER_MIO_ENHANCE_POWER.title": "强化",
+    "HARUKA_POWER_MIO_ENHANCE_POWER.description": "[gold]澪[/gold]格挡伤害后，使[gold]澪[/gold]和[gold]遥[/gold]获得[blue]{Amount}[/blue]点[gold]格挡[/gold]。",
+    "HARUKA_POWER_MIO_ENHANCE_POWER.smartDescription": "[gold]澪[/gold]格挡伤害后，使[gold]澪[/gold]和[gold]遥[/gold]获得[blue]{Amount}[/blue]点[gold]格挡[/gold]。", 
+    "HARUKA_POWER_MIO_ENHANCE_POWER.title": "振刀",
 
     "HARUKA_POWER_INTO_PLAY_POWER.description": "[gold]情绪[/gold]的效果提高[blue]{Amount}[/blue]倍。",
     "HARUKA_POWER_INTO_PLAY_POWER.smartDescription": "[gold]情绪[/gold]的效果提高[blue]{Amount}[/blue]倍。", 
