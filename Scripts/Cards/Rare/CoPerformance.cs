@@ -16,7 +16,7 @@ using Test.Scripts;
 
 
 
-namespace Haruka.Scripts.Cards.Uncommon
+namespace Haruka.Scripts.Cards.Rare
 {
     [RegisterCard(typeof(HarukaCardPool))]
     public class CoPerformance : HarukaCard

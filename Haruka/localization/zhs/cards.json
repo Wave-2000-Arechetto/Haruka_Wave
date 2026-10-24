@@ -233,7 +233,8 @@
 	"HARUKA_CARD_GLASS_SHOP.title": "小钢珠店",
 	"HARUKA_CARD_GLASS_SHOP.description":"[gold]生成[/gold]2个[gold]玻璃[/gold]充能球。\n其[gold]被动[/gold]数值在{Min:diff()}到6之间随机。",
 
-
+	"HARUKA_CARD_EXPAND.title":"场地扩展",
+	"HARUKA_CARD_EXPAND.description":"获得{Number:diff()}个充能球栏位。\n[gold]生成[/gold]{Number:diff()}个[gold]聚光灯[/gold]充能球。",
 
 	"HARUKA_CARD_REVENGE.title":"报仇！",
 	"HARUKA_CARD_REVENGE.description": "[gold]惊吓[/gold]直到[gold]恐惧[/gold]3。\n将{Cards:diff()}张[gold]愤怒打击{IfUpgraded:show:+|}[/gold]放入手牌。",
