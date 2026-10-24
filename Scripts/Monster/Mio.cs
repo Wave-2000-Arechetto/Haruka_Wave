@@ -63,7 +63,7 @@ public class Mio : ModMinionTemplate
 
     public override async Task AfterDamageReceivedLate(PlayerChoiceContext choiceContext, Creature target, DamageResult result, ValueProp props, Creature? dealer, CardModel? cardSource)
     {
-        if (target == Creature && (int)result.UnblockedDamage > 0)
+        if (target == Creature && result.UnblockedDamage > 0)
         {
             await CreatureCmd.TriggerAnim(Creature, "Hurt", 0.0f);
         }

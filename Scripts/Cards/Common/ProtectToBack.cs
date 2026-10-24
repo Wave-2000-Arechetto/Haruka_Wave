@@ -15,18 +15,18 @@ using MegaCrit.Sts2.Core.Models.Orbs;
 
 
 
-namespace Haruka.Scripts.Cards.Uncommon
+namespace Haruka.Scripts.Cards.Common
 {
     [RegisterCard(typeof(HarukaCardPool))]
     public class ProtectToBack : HarukaCard
     {
         private const int energyCost = 1;
         private const CardType type = CardType.Skill;
-        private const CardRarity rarity = CardRarity.Uncommon;
+        private const CardRarity rarity = CardRarity.Common;
         private const TargetType targetType = TargetType.Self;
         private const bool shouldShowInCardLibrary = true;
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(8, ValueProp.Move)];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(7, ValueProp.Move)];
 
         protected override IEnumerable<IHoverTip> AdditionalHoverTips => [];
 

@@ -1,6 +1,6 @@
 {
     "HARUKA_ORB_BUBBLE_ORB.description": "[gold]激发[/gold]时可以获得格挡。",
-    "HARUKA_ORB_BUBBLE_ORB.smartDescription": "每回合结束时，这个充能球的层数减少2。\n[gold]被动：[/gold]本充能球的层数+[blue]{Passive}[/blue]。\n[gold]激发：[/gold]获得[blue]{Evoke}[/blue]点[gold]格挡[/gold]（不受[gold]集中[/gold]影响）。\n每次受到攻击时，如果伤害不能完全被[gold]格挡[/gold]且它是[gold]最前面[/gold]的充能球，[gold]激发[/gold]。",
+    "HARUKA_ORB_BUBBLE_ORB.smartDescription": "[gold]被动：[/gold]本充能球的层数+[blue]{Passive}[/blue]。\n[gold]激发：[/gold]获得[blue]{Evoke}[/blue]点[gold]格挡[/gold]（不受[gold]集中[/gold]影响）。\n每次受到攻击时，如果伤害不能完全被[gold]格挡[/gold]且它是[gold]最前面[/gold]的充能球，[gold]激发[/gold]。",
     "HARUKA_ORB_BUBBLE_ORB.title": "浮泡",
 
     "HARUKA_ORB_FIREWORK_ORB.description": "[gold]被动[/gold]和[gold]激发[/gold]时会消耗层数抽牌。(不受[gold]集中[/gold]影响)",

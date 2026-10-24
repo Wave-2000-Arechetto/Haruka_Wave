@@ -26,7 +26,7 @@ namespace Haruka.Scripts.Cards.Uncommon
         private const TargetType targetType = TargetType.Self;
         private const bool shouldShowInCardLibrary = true;
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(7, ValueProp.Move), new IntVar("Time", 1)];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(8, ValueProp.Move), new IntVar("Time", 1)];
 
         protected override IEnumerable<IHoverTip> AdditionalHoverTips => [];
 

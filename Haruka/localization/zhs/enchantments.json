@@ -1,5 +1,5 @@
 {
-    "WEI_SWIFT.title": "盟约：灵巧",
-	"WEI_SWIFT.description":"在手牌时，每当打出一张同类型手牌，本回合下次打出时耗能-1。",
-    "WEI_SWIFT.extraCardText": "盟约：灵巧"
+    "STICK.title": "便利贴",
+	"STICK.description":"打出这张牌后，[gold]生成[/gold]一个[gold]浮泡[/gold]充能球。",
+    "STICK.extraCardText": "便利贴"
 }

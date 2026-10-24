@@ -23,9 +23,9 @@ public class BubbleOrb : ModOrbTemplate
 {
     // 被动效果数值，ModifyOrbValue表示是否吃集中等
 
-    private int passiveVal = 1;
+    private int passiveVal = 0;
 
-    private int evokeVal = 6;
+    private int evokeVal = 5;
     public override decimal PassiveVal => ModifyOrbValue(passiveVal);
 
     // 激发效果数值
@@ -55,7 +55,6 @@ public class BubbleOrb : ModOrbTemplate
     // 回合开始时触发被动
     public override async Task BeforeTurnEndOrbTrigger(PlayerChoiceContext choiceContext)
 	{
-        evokeVal = evokeVal - 2;
 		await TriggerPassive(choiceContext, null);
 	}
     

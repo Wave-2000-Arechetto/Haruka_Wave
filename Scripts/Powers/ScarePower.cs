@@ -11,6 +11,7 @@ using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 using STS2RitsuLib.Combat.CardTargeting;
 using STS2RitsuLib.Interop.AutoRegistration;
@@ -40,9 +41,10 @@ public class ScarePower : AbstractHarukaPower
 
     public override async Task AfterPlayerTurnStartLate(PlayerChoiceContext choiceContext, Player player)
     {
-        if (EmotionBarManager.Instance.Get(player) == -3)
+        if (EmotionBarManager.Instance.Get(player) == -3 && player.Creature == Owner)
         {
             await Calm(choiceContext, 3);
+            await PowerCmd.Apply<StrengthPower>(choiceContext, player.Creature, 1, player.Creature, null);
         }
     }
 

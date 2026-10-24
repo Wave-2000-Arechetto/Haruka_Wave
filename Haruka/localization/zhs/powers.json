@@ -7,12 +7,12 @@
     "HARUKA_POWER_CALM_POWER.smartDescription": "目前情绪为[gold]平静[/gold]。", 
     "HARUKA_POWER_CALM_POWER.title": "平静",
 
-    "HARUKA_POWER_SCARE_POWER.description": "目前情绪为[purple]恐惧[/purple]。[gold]遥[/gold]和[gold]澪[/gold]造成的伤害增加[purple]恐惧[/purple]层数的数值，但是在[purple]恐惧[/purple]达到3时，受到的所有伤害增加2。\n\n在你的回合开始时，如果你在[purple]恐惧[/purple]3，回复至[blue]平静[/blue]。",
-    "HARUKA_POWER_SCARE_POWER.smartDescription": "目前情绪为[purple]恐惧[/purple]。[gold]遥[/gold]和[gold]澪[/gold]造成的伤害增加[purple]恐惧[/purple]层数的数值，但是在[purple]恐惧[/purple]达到3时，受到的所有伤害增加2。\n\n在你的回合开始时，如果你在[purple]恐惧[/purple]3，回复至[blue]平静[/blue]。", 
+    "HARUKA_POWER_SCARE_POWER.description": "目前情绪为[purple]恐惧[/purple]。[gold]遥[/gold]和[gold]澪[/gold]造成的伤害增加[purple]恐惧[/purple]层数的数值，但是在[purple]恐惧[/purple]达到3时，受到的所有伤害增加2。\n\n在你的回合开始时，如果你在[purple]恐惧[/purple]3，回复至[blue]平静[/blue]并获得1点[blue]力量[/blue]。",
+    "HARUKA_POWER_SCARE_POWER.smartDescription": "目前情绪为[purple]恐惧[/purple]。[gold]遥[/gold]和[gold]澪[/gold]造成的伤害增加[purple]恐惧[/purple]层数的数值，但是在[purple]恐惧[/purple]达到3时，受到的所有伤害增加2。\n\n在你的回合开始时，如果你在[purple]恐惧[/purple]3，回复至[blue]平静[/blue]并获得1点[blue]力量[/blue]。", 
     "HARUKA_POWER_SCARE_POWER.title": "恐惧",
 
-    "HARUKA_POWER_INSPIRED_POWER.description": "目前情绪为[pink]振奋[/pink]。遥获得相当于[pink]振奋[/pink]层数的[gold]集中[/gold]，但是在[pink]振奋[/pink]达到3时，每回合开始时少抽1张牌。\n\n在你的回合开始时，如果你在[pink]振奋[/pink]3，回复至[blue]平静[/blue]。",       
-    "HARUKA_POWER_INSPIRED_POWER.smartDescription": "目前情绪为[pink]振奋[/pink]。遥获得相当于[pink]振奋[/pink]层数的[gold]集中[/gold]，但是在[pink]振奋[/pink]达到3时，每回合开始时少抽1张牌。\n\n在你的回合开始时，如果你在[pink]振奋[/pink]3，回复至[blue]平静[/blue]。", 
+    "HARUKA_POWER_INSPIRED_POWER.description": "目前情绪为[pink]振奋[/pink]。[gold]遥[/gold]获得相当于[pink]振奋[/pink]层数的[gold]集中[/gold]，但是在[pink]振奋[/pink]达到3时，每回合开始时少抽1张牌。\n\n在你的回合开始时，如果你在[pink]振奋[/pink]3，回复至[blue]平静[/blue]。",       
+    "HARUKA_POWER_INSPIRED_POWER.smartDescription": "目前情绪为[pink]振奋[/pink]。[gold]遥[/gold]获得相当于[pink]振奋[/pink]层数的[gold]集中[/gold]，但是在[pink]振奋[/pink]达到3时，每回合开始时少抽1张牌。\n\n在你的回合开始时，如果你在[pink]振奋[/pink]3，回复至[blue]平静[/blue]。", 
     "HARUKA_POWER_INSPIRED_POWER.title": "振奋",
 
     "HARUKA_POWER_FINS_POWER.description": "每当[gold]浮泡[/gold]破碎时，使攻击的敌人[gold]浮空[/gold]（不因攻击而破碎的场合目标随机选择）。",

@@ -82,7 +82,7 @@
 	"HARUKA_CARD_COERCION.title": "威压",
 	"HARUKA_CARD_COERCION.description": "[gold]澪[/gold]入场。\n所有敌人本回合失去{StrengthPower:diff()}点[gold]力量[/gold]。",
 
-	"HARUKA_CARD_PREPARE.title": "准备工作",
+	"HARUKA_CARD_PREPARE.title": "招待",
 	"HARUKA_CARD_PREPARE.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n将[gold]寒晖{IfUpgraded:show:+|}[/gold]放入手牌。",
 
 	"HARUKA_CARD_STRESS_STRIKE.title": "应激打击",
@@ -193,8 +193,12 @@
 	"HARUKA_CARD_FAKE_NEWS.description":"[gold]澪[/gold]入场。\n选择手牌中最多2张牌，将其[gold]变化[/gold]为[gold]斩[/gold]{IfUpgraded:show:+|}。",
 	"HARUKA_CARD_FAKE_NEWS.selectionScreenPrompt": "选择最多2张牌。",
 
+	"HARUKA_CARD_STICKY_NOTE.title": "鳞兽便利贴",
+	"HARUKA_CARD_STICKY_NOTE.description":"选择抽牌堆2张牌，[gold]附魔：[/gold][purple]便利贴[/purple]。",
+	"HARUKA_CARD_STICKY_NOTE.selectionScreenPrompt": "选择最多2张牌。",
+
 	"HARUKA_CARD_SUPPORT.title":"扶持",
-	"HARUKA_CARD_SUPPORT.description": "抽{Cards:diff()}张牌。\n如果[gold]澪[/gold]在场，获得{energyPrefix:energyIcons(1)}。",
+	"HARUKA_CARD_SUPPORT.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n如果[gold]澪[/gold]在场，获得{energyPrefix:energyIcons(1)}。",
 
 	"HARUKA_CARD_STUNT.title": "特技动作",
 	"HARUKA_CARD_STUNT.description":"抽{Cards:diff()}张牌。\n你的回合结束时，[gold]惊吓[/gold]3。",
