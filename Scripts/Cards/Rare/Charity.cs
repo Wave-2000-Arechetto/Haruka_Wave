@@ -38,9 +38,7 @@ namespace Haruka.Scripts.Cards.Uncommon
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            int num = Owner.PlayerCombatState.Hand.Cards.Where(c => (c.Pool is TokenCardPool || c.Pool is ColorlessCardPool || c.Rarity == CardRarity.Token)).ToList().Count;
-            await PlayerCmd.GainEnergy(DynamicVars.Energy.IntValue + num, Owner);
-            await CardPileCmd.Draw(choiceContext, DynamicVars.Energy.IntValue + num, Owner);
+            
 
         }
 

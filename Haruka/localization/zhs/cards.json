@@ -312,7 +312,6 @@
 	"HARUKA_CARD_GOOD_OPPONENT.title":"好敌手",
 	"HARUKA_CARD_GOOD_OPPONENT.description": "[gold]澪[/gold]入场。\n在下个回合，[gold]澪[/gold]对其造成的伤害翻倍。 ",
 
-
 	
 	"HARUKA_CARD_HIGASHI.title":"不夜御机",
 	"HARUKA_CARD_HIGASHI.description": "依次序[gold]生成[/gold][gold]浮泡[/gold]，[gold]花火[/gold]，[gold]聚光灯[/gold]充能球各一个。\n触发所有充能球的被动效果{Time:diff()}次。",
