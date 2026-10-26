@@ -62,7 +62,7 @@ namespace Haruka.Scripts.Cards.Rare
         // 升级后的效果逻辑
         protected override void OnUpgrade()
         {
-            
+            DynamicVars.Damage.UpgradeValueBy(4);
         }
     }
 }

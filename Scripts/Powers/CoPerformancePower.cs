@@ -29,12 +29,18 @@ public class CoPerformancePower : AbstractHarukaPower
 
     public override async Task AfterPlayerTurnStartLate(PlayerChoiceContext choiceContext, Player player)
     {
-        CardModel card = ModelDb.Card<DualDance>().ToMutable();
+        
 
-        for (int i = 0; i < Amount; i++)
+        if (player == Owner.Player)
         {
+            for (int i = 0; i < Amount; i++)
+        {
+            CardModel card = CombatState!.CreateCard<DualDance>(Owner.Player);
             await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, player, CardPilePosition.Bottom);
         }
+        }
+
+        
     }
     
 }
