@@ -263,8 +263,14 @@ if (player.Creature.CombatState != null)
             await CreatureCmd.TriggerAnim(mio, "Skill", 0.0f);
             for (int i = 0; i < hitCount; i++)
             {
-                await Cmd.Wait(0.5f);               
-                await CreatureCmd.Damage(choiceContext, targets, damage, prop, mio, cardSource, cardPlay);
+                await Cmd.Wait(0.5f);
+                foreach (Creature target in targets)               
+                {
+                    if (target.IsAlive)
+                    {
+                        await CreatureCmd.Damage(choiceContext, target, damage, prop, mio, cardSource, cardPlay);
+                    }
+                }
             }
         }
         else
@@ -273,7 +279,13 @@ if (player.Creature.CombatState != null)
             for (int i = 0; i < hitCount; i++)
             {
                 await Cmd.Wait(0.5f);
-                await CreatureCmd.Damage(choiceContext, targets, damage, prop, mio, cardSource, cardPlay);              
+                foreach (Creature target in targets)               
+                {
+                    if (target.IsAlive)
+                    {
+                        await CreatureCmd.Damage(choiceContext, target, damage, prop, mio, cardSource, cardPlay);
+                    }
+                }
             }            
         }
 

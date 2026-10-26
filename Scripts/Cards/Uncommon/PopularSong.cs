@@ -35,7 +35,10 @@ namespace Haruka.Scripts.Cards.Uncommon
             await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, cardPlay);
             for (int i = 0; i < DynamicVars["Time"].BaseValue; i++)
             {
-                await OrbCmd.Passive(choiceContext, Owner.PlayerCombatState!.OrbQueue.Orbs[0], null, true);
+                if (Owner.PlayerCombatState!.OrbQueue.Orbs.Count > 0)
+                {
+                    await OrbCmd.Passive(choiceContext, Owner.PlayerCombatState!.OrbQueue.Orbs[0], null, true);
+                }
             }
         }
 
