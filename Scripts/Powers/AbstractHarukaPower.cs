@@ -30,11 +30,11 @@ public abstract class AbstractHarukaPower : ModPowerTemplate
 
     public async Task Calm(PlayerChoiceContext choiceContext, int amount)
     {
-        if (EmotionBarManager.Instance?.Get(Owner.Player!) < 0)
+        if (EmotionBarManager.Get(Owner.Player!) < 0)
         {
             await Inspire(choiceContext, amount);
         }
-        else if (EmotionBarManager.Instance?.Get(Owner.Player!) > 0)
+        else if (EmotionBarManager.Get(Owner.Player!) > 0)
         {
             await Scare(choiceContext, amount);
         }

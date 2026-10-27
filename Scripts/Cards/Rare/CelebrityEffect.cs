@@ -40,7 +40,7 @@ namespace Haruka.Scripts.Cards.Rare
 
         
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
+        public override IEnumerable<CardKeyword> CanonicalKeywords => [];
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
             var entries = CombatManager.Instance.History.Entries.ToList();

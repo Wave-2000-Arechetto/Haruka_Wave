@@ -36,7 +36,7 @@ namespace Haruka.Scripts.Cards.Common
         {
             
             await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, cardPlay);
-            if (EmotionBarManager.Instance.Get(Owner) < 0)
+            if (EmotionBarManager.Get(Owner) < 0)
             {
                 await CreatureCmd.GainBlock(Owner.Creature, DynamicVars["Extra"].BaseValue, ValueProp.Move, cardPlay);
             }

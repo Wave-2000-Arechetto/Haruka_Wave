@@ -36,7 +36,7 @@ namespace Haruka.Scripts.Cards.Rare
         public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            int emotion = (int)Math.Abs(EmotionBarManager.Instance!.Get(Owner));
+            int emotion = (int)Math.Abs(EmotionBarManager.Get(Owner));
             await Calm(choiceContext, emotion);
             await CardPileCmd.Draw(choiceContext, emotion, Owner);
             await PlayerCmd.GainEnergy(emotion, Owner);

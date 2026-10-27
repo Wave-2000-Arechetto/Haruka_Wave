@@ -34,10 +34,10 @@ namespace Haruka.Scripts.Cards.Uncommon
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            int emotion = (int)EmotionBarManager.Instance!.Get(Owner);
+            int emotion = (int)EmotionBarManager.Get(Owner);
             await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, cardPlay);
             await Scare(choiceContext, 2);
-            if (emotion >= 0 && (int)EmotionBarManager.Instance!.Get(Owner) < 0)
+            if (emotion >= 0 && (int)EmotionBarManager.Get(Owner) < 0)
             {
                 for (int i = 0; i < DynamicVars["Extra"].BaseValue; i++)
                 {

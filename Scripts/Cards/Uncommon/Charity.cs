@@ -14,13 +14,14 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models.Orbs;
 using Test.Scripts;
 using MegaCrit.Sts2.Core.Models;
+using STS2RitsuLib.Scaffolding.Characters;
 
 
 
 namespace Haruka.Scripts.Cards.Uncommon
 {
     [RegisterCard(typeof(HarukaCardPool))]
-    public class Observe : HarukaCard
+    public class Charity : HarukaCard
     {
         private const int energyCost = 0;
         private const CardType type = CardType.Skill;
@@ -28,33 +29,20 @@ namespace Haruka.Scripts.Cards.Uncommon
         private const TargetType targetType = TargetType.AnyEnemy;
         private const bool shouldShowInCardLibrary = true;
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [new IntVar("Times", 1)];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(2)];
 
         protected override IEnumerable<IHoverTip> AdditionalHoverTips => [];
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            if (cardPlay.Target!.Monster!.IntendsToAttack)
+            if (Owner.PlayerCombatState!.OrbQueue.Orbs.Count < Owner.GetOrbCapacity())
             {
-                OrbModel bubble = ModelDb.Orb<BubbleOrb>().ToMutable();
-                await OrbCmd.Channel(choiceContext, bubble, Owner);
-                for (int i = 0; i < DynamicVars["Times"].BaseValue; i++)
-                {
-                    await OrbCmd.Evoke(choiceContext, Owner, bubble);
-                }
-            }
-            else
-            {
-                OrbModel spotlight = ModelDb.Orb<SpotlightOrb>().ToMutable();
-                await OrbCmd.Channel(choiceContext, spotlight, Owner);
-                for (int i = 0; i < DynamicVars["Times"].BaseValue; i++)
-                {                    
-                    await OrbCmd.Passive(choiceContext, spotlight, null, true);
-                }
+                OrbCmd.RemoveSlots(Owner, 1);
+                await PlayerCmd.GainEnergy(DynamicVars["Energy"].IntValue, Owner);
             }
         }
 
-        public Observe() : base(energyCost, type, rarity, targetType)
+        public Charity() : base(energyCost, type, rarity, targetType)
         {
             
         }
@@ -69,7 +57,7 @@ namespace Haruka.Scripts.Cards.Uncommon
         // 升级后的效果逻辑
         protected override void OnUpgrade()
         {
-            DynamicVars["Times"].UpgradeValueBy(1);
+            DynamicVars["Energy"].UpgradeValueBy(1);
         }
     }
 }

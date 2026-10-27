@@ -34,7 +34,7 @@ namespace Haruka.Scripts.Cards.Rare
         private const TargetType targetType = TargetType.Self;
         private const bool shouldShowInCardLibrary = true;
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [new IntVar("Slots", 1)];
 
         protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromOrb<CertainFateOrb>()];
 
@@ -42,9 +42,9 @@ namespace Haruka.Scripts.Cards.Rare
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
             
+            
+            await OrbCmd.AddSlots(Owner, DynamicVars["Slots"].IntValue);
             await OrbCmd.Channel<CertainFateOrb>(choiceContext, Owner);
-            
-            
         }
 
         public CertainFate() : base(energyCost, type, rarity, targetType)
@@ -55,7 +55,8 @@ namespace Haruka.Scripts.Cards.Rare
         // 升级后的效果逻辑
         protected override void OnUpgrade()
         {
-            EnergyCost.UpgradeBy(-1);
+            DynamicVars["Slots"].UpgradeValueBy(1);
+            
         }
     }
 }

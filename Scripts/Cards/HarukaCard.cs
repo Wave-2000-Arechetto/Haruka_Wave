@@ -85,11 +85,11 @@ public abstract class HarukaCard : ModCardTemplate
 
     public async Task Calm(PlayerChoiceContext choiceContext, int amount)
     {
-        if (EmotionBarManager.Instance?.Get(Owner) < 0)
+        if (EmotionBarManager.Get(Owner) < 0)
         {
             await Inspire(choiceContext, amount);
         }
-        else if (EmotionBarManager.Instance?.Get(Owner) > 0)
+        else if (EmotionBarManager.Get(Owner) > 0)
         {
             await Scare(choiceContext, amount);
         }

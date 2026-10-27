@@ -10,33 +10,37 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 using MegaCrit.Sts2.Core.ValueProps;
 using Haruka.Scripts.UI;
+using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 
 
 
 namespace Haruka.Scripts.Cards.Common
 {
     [RegisterCard(typeof(HarukaCardPool))]
-    public class Flurried : HarukaCard
+    public class Requirement : HarukaCard
     {
         private const int energyCost = 1;
-        private const CardType type = CardType.Attack;
+        private const CardType type = CardType.Skill;
         private const CardRarity rarity = CardRarity.Common;
-        private const TargetType targetType = TargetType.AnyEnemy;
+        private const TargetType targetType = TargetType.Self;
         private const bool shouldShowInCardLibrary = true;
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(14, ValueProp.Move)];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [
+            new CardsVar(2),
+    
+        ];
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            await DamageCmd.Attack(DynamicVars.Damage.BaseValue) // 造成伤害，数值来源于卡牌的基础伤害属性
-                .FromCard(this , cardPlay) // 伤害来源于这张卡牌
-                .Targeting(cardPlay.Target!) // 伤害目标是玩家选择的目标
-                .Execute(choiceContext);
-
-            OrbCmd.RemoveSlots(Owner,1);    
+            
+    
+    await CardPileCmd.Draw(choiceContext,
+        (int)DynamicVars["Cards"].BaseValue + Math.Abs((int)EmotionBarManager.Get(Owner)), Owner);
+            
         }
 
-        public Flurried() : base(energyCost, type, rarity, targetType)
+        public Requirement() : base(energyCost, type, rarity, targetType)
         {
         }
 
@@ -50,7 +54,7 @@ namespace Haruka.Scripts.Cards.Common
         // 升级后的效果逻辑
         protected override void OnUpgrade()
         {
-            DynamicVars.Damage.UpgradeValueBy(4); // 升级后增加4点伤害
+            DynamicVars["Cards"].UpgradeValueBy(1); 
         }
     }
 }

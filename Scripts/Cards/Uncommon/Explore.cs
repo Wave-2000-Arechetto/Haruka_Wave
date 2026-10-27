@@ -44,7 +44,7 @@ namespace Haruka.Scripts.Cards.Uncommon
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
             int Hit = 2;
-            if ((int)EmotionBarManager.Instance!.Get(Owner) < 0)
+            if ((int)EmotionBarManager.Get(Owner) < 0)
             {
                 Hit = 3;
             }

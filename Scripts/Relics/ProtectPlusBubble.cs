@@ -59,7 +59,7 @@ public sealed class ProtectPlusBubble : ModRelicTemplate
         {
             TriggerTime++;
             InvokeDisplayAmountChanged();
-            await CreatureCmd.Heal(Owner.Creature, 3, true);
+            await CreatureCmd.Heal(Owner.Creature, 2, true);
         }
         
     }

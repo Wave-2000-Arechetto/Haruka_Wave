@@ -62,11 +62,10 @@ namespace Haruka.Scripts.Cards.Uncommon
     if (card?.Owner is not Player player)
         return 0;
 
-    var manager = EmotionBarManager.Instance;
-    if (manager == null)
-        return 0;   // 战斗未就绪时按平静算，预览显示基础伤害
+    if (EmotionBarManager.Instance == null)
+        return 0;   
 
-    return (int)Math.Abs(manager.Get(player));
+    return (int)Math.Abs(EmotionBarManager.Get(player));
 }
 
         
