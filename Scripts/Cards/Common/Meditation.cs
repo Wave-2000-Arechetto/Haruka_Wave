@@ -50,7 +50,7 @@ namespace Haruka.Scripts.Cards.Common
                 {
                     return true;
                 }
-                return EmotionBarManager.Instance.Get(Owner) == 0;
+                return EmotionBarManager.Get(Owner) == 0;
             }
         }
 

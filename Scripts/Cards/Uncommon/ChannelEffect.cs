@@ -32,11 +32,11 @@ namespace Haruka.Scripts.Cards.Uncommon
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            int emotion = (int)EmotionBarManager.Instance!.Get(Owner);
+            int emotion = (int)EmotionBarManager.Get(Owner);
             
             if (emotion > 0)
             {
-                EmotionBarManager.Instance!.Set(choiceContext, Owner, -emotion);
+                await EmotionBarManager.Instance!.Set(choiceContext, Owner, -emotion);
                 await PowerCmd.Apply<ChannelEffectPower>(new ThrowingPlayerChoiceContext(), Owner.Creature, emotion, Owner.Creature, null);
             }
 

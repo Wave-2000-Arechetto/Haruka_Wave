@@ -19,6 +19,7 @@ using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Combat.History.Entries;
 using Test.Scripts;
 using MegaCrit.Sts2.Core.Extensions;
+using STS2RitsuLib.Scaffolding.Characters;
 
 
 
@@ -42,6 +43,12 @@ namespace Haruka.Scripts.Cards.Rare
         public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Ethereal];
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
+            bool add = false;
+            if (Owner.PlayerCombatState!.OrbQueue.Orbs.Count + 2 > Owner.GetOrbCapacity())
+            {
+                add = true;
+            }
+
             for (int i = 0; i < 2; i++)
             {
                 List<OrbModel> orbs = new List<OrbModel>();
@@ -53,10 +60,15 @@ namespace Haruka.Scripts.Cards.Rare
                 if (orb is not null)
                 {
                     await OrbCmd.Channel(choiceContext, orb, Owner);
+                    
                 }
+
             }
 
-           
+            if (add)
+            {
+                await OrbCmd.AddSlots(Owner, 1);
+            }
             
 
         }
@@ -65,17 +77,7 @@ namespace Haruka.Scripts.Cards.Rare
         {
         }
 
-        protected override CardLocation GetResultLocationForCardPlay()
-        {
-            CardLocation result = base.GetResultLocationForCardPlay();
-            int orbCount = Owner.PlayerCombatState?.OrbQueue?.Orbs.Count ?? 0;
-            if (result.pileType == PileType.Discard && orbCount + 2 > Owner.BaseOrbSlotCount)
-            {
-                result.pileType = PileType.Draw;
-                result.position = CardPilePosition.Random;
-            }
-            return result;
-        }
+        
         // 升级后的效果逻辑
         protected override void OnUpgrade()
         {

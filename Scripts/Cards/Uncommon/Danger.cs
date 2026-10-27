@@ -33,7 +33,7 @@ namespace Haruka.Scripts.Cards.Uncommon
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            int emotion = (int)EmotionBarManager.Instance!.Get(Owner);
+            int emotion = (int)EmotionBarManager.Get(Owner);
             await Scare(choiceContext, (int)DynamicVars["Scare"].BaseValue);
             await PowerCmd.Apply<DangerPower>(choiceContext, Owner.Creature, 2, Owner.Creature, null);
         }

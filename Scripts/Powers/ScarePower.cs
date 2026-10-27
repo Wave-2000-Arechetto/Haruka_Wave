@@ -41,7 +41,7 @@ public class ScarePower : AbstractHarukaPower
 
     public override async Task AfterPlayerTurnStartLate(PlayerChoiceContext choiceContext, Player player)
     {
-        if (EmotionBarManager.Instance.Get(player) == -3 && player.Creature == Owner)
+        if (EmotionBarManager.Get(player) == -3 && player.Creature == Owner)
         {
             await Calm(choiceContext, 3);
             await PowerCmd.Apply<StrengthPower>(choiceContext, player.Creature, 1, player.Creature, null);

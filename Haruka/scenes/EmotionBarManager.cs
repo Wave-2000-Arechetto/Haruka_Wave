@@ -92,10 +92,10 @@ namespace Haruka.Scripts.UI
 			OnValueChanged?.Invoke(owner, next);
 		}
 
-		public float Get(Player owner)
+		public static float Get(Player owner)
 		{
 			if (owner == null) return 0f;
-			return _values.GetValueOrDefault(owner, 0f);
+			return Instance?._values.GetValueOrDefault(owner, 0f) ?? 0f;
 		}
 
 		public async Task Reset(PlayerChoiceContext choiceContext, Player owner)

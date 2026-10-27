@@ -88,8 +88,8 @@
 	"HARUKA_CARD_STRESS_STRIKE.title": "应激打击",
 	"HARUKA_CARD_STRESS_STRIKE.description": "造成{Damage:diff()}点伤害。\n将[gold]驱鬼[/gold]放入手牌。",
 
-	"HARUKA_CARD_FLURRIED.title": "慌乱",
-	"HARUKA_CARD_FLURRIED.description": "造成{Damage:diff()}点伤害。\n失去1个充能球栏位。",
+	"HARUKA_CARD_REQUIREMENT.title": "节目剧本",
+	"HARUKA_CARD_REQUIREMENT.description": "抽{Cards:diff()}张牌，你的情绪每离[gold]平静[/gold]相差1，额外抽1张。",
 
     "HARUKA_CARD_HARMONY.title": "和声",
 	"HARUKA_CARD_HARMONY.description": "造成{Damage:diff()}点伤害。\n如果本回合你打出过[gold]无色牌[/gold]，获得{energyPrefix:energyIcons(1)}并抽1张牌。",
@@ -221,8 +221,8 @@
 	"HARUKA_CARD_SCENE_MACHINE.title": "布景机",
 	"HARUKA_CARD_SCENE_MACHINE.description":"你每抽12张牌，[gold]生成[/gold]1个[gold]浮泡[/gold]充能球。",
 
-	"HARUKA_CARD_OBSERVE.title": "望气",
-	"HARUKA_CARD_OBSERVE.description":"如果目标意图为攻击，[gold]生成[/gold]1个[gold]浮泡[/gold]充能球。\n否则[gold]生成[/gold]1个[gold]聚光灯[/gold]充能球。\n触发生成的充能球的[gold]被动[/gold]{Times:diff()}次。",
+	"HARUKA_CARD_CHARITY.title": "公益演出",
+	"HARUKA_CARD_CHARITY.description":"失去一个空的充能球栏位以获得{IfUpgraded:show:{energyPrefix:energyIcons(3)}|{energyPrefix:energyIcons(2)}}。",
 	
     "HARUKA_CARD_POISED.title": "蓄势",
 	"HARUKA_CARD_POISED.description":"[gold]澪[/gold]入场。\n将1张[gold]居合[/gold]放入手牌。",
@@ -258,7 +258,7 @@
 	"HARUKA_CARD_COLD_MOON.description": "[gold]澪[/gold]入场。\n将{Cards:diff()}张[gold]寒晖[/gold]放入手牌。\n[gold]澪[/gold]本场战斗获得3点[gold]力量[/gold]。",
 
 	"HARUKA_CARD_CERTAIN_FATE.title":"天命眷顾！",
-	"HARUKA_CARD_CERTAIN_FATE.description": "[gold]生成[/gold]1个[gold]“某种天命”[/gold]。",
+	"HARUKA_CARD_CERTAIN_FATE.description": "获得{Slots:diff()}个充能球栏位。\n[gold]生成[/gold]1个[gold]“某种天命”[/gold]。",
 
 	"HARUKA_CARD_HANABI_EXILED.title":"不归花火",
 	"HARUKA_CARD_HANABI_EXILED.description": "选择至多{Cards:diff()}张手牌[gold]消耗[/gold]，[gold]生成[/gold]1个层数等于[gold]消耗[/gold]牌数的[gold]花火[/gold]充能球。",
@@ -294,7 +294,7 @@
 	"HARUKA_CARD_ARTIST_OF_STORY.description": "造成{Damage:diff()}点伤害。\n本场战斗中每进入1次[gold]恐惧[/gold]，重复1次。",
 
 	"HARUKA_CARD_FROTH.title":"幻沫",
-	"HARUKA_CARD_FROTH.description": "随机[gold]生成[/gold]2个遥的充能球。\n如果你因此[gold]激发[/gold]了充能球，将这张牌洗入抽牌堆。",
+	"HARUKA_CARD_FROTH.description": "随机[gold]生成[/gold]2个遥的充能球。\n如果你因此[gold]激发[/gold]了充能球，获得1个充能球栏位。",
 
 	"HARUKA_CARD_HOME.title":"容身之所",
 	"HARUKA_CARD_HOME.description": "造成{Damage:diff()}点伤害。\n选择并打出消耗牌堆中的1张[gold]无色牌[/gold]。",

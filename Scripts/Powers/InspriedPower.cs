@@ -52,10 +52,12 @@ public class InspiredPower : AbstractHarukaPower
 
     public override async Task AfterPlayerTurnStartLate(PlayerChoiceContext choiceContext, Player player)
     {
-        if (EmotionBarManager.Instance.Get(player) == 3 && !player.Creature.HasPower<ClimaxPower>() && player.Creature == Owner)
+        if (EmotionBarManager.Get(player) == 3 && !player.Creature.HasPower<ClimaxPower>() && player.Creature == Owner)
         {
             await Calm(choiceContext, 3);
+            
         }
+        
     }
     
 }

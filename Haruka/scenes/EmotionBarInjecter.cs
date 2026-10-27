@@ -43,7 +43,7 @@ namespace Haruka.Scripts.Patches
 
 			// 初始化显示
 			EmotionBarManager.Instance!.Set(choiceContext, player, 0);
-			bar.SetValue(EmotionBarManager.Instance!.Get(player));
+			bar.SetValue(EmotionBarManager.Get(player));
 		}
 
 		

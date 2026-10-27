@@ -23,9 +23,9 @@ public class BubbleOrb : ModOrbTemplate
 {
     // 被动效果数值，ModifyOrbValue表示是否吃集中等
 
-    private int passiveVal = 0;
+    private int passiveVal = 1;
 
-    private int evokeVal = 5;
+    private int evokeVal = 4;
     public override decimal PassiveVal => ModifyOrbValue(passiveVal);
 
     // 激发效果数值

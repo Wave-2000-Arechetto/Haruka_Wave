@@ -33,7 +33,7 @@ namespace Haruka.Scripts.Cards.Uncommon
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            int emotion = (int)EmotionBarManager.Instance!.Get(Owner);
+            int emotion = (int)EmotionBarManager.Get(Owner);
             await Inspire(choiceContext, (int)DynamicVars["Inspire"].BaseValue);
             await PowerCmd.Apply<ClimaxPower>(choiceContext, Owner.Creature, 1, Owner.Creature, null);
             

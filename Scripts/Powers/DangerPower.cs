@@ -28,12 +28,13 @@ public class DangerPower : AbstractHarukaPower
 
     public override async Task AfterSideTurnEndLate(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
-        if (side == CombatSide.Player && (int)EmotionBarManager.Instance!.Get(Owner.Player) <= -3)
+        if (side == CombatSide.Player && (int)EmotionBarManager.Get(Owner.Player) <= -3)
         {
             await EmotionBarManager.Instance!.Set(choiceContext, Owner.Player, 0);
             await PowerCmd.Apply<StrengthPower>(choiceContext, Owner, Amount, Owner, null);
+            
         }
-        
+        await PowerCmd.Remove(this);
     }
     
         

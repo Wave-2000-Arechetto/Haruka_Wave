@@ -35,7 +35,7 @@ namespace Haruka.Scripts.Cards.Common
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
             await Scare(choiceContext, 1);
-            if (EmotionBarManager.Instance.Get(Owner) <= -(int)DynamicVars["Mio"].BaseValue)
+            if (EmotionBarManager.Get(Owner) <= -(int)DynamicVars["Mio"].BaseValue)
             {
                 await SummonMio(choiceContext);
             }

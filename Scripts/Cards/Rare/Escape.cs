@@ -35,7 +35,7 @@ namespace Haruka.Scripts.Cards.Rare
         public override IEnumerable<CardKeyword> CanonicalKeywords => [];
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            int emotion = (int)(EmotionBarManager.Instance?.Get(Owner) ?? 0);
+            int emotion = (int)(EmotionBarManager.Get(Owner));
             await EmotionBarManager.Instance?.Set(choiceContext, Owner, 3);
             await DamageCmd.Attack(DynamicVars.Damage.BaseValue) // 造成伤害，数值来源于卡牌的基础伤害属性
                 .WithHitCount(3-emotion)
