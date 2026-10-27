@@ -169,7 +169,7 @@
 	"HARUKA_CARD_POPULAR_SONG.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n触发最前方的充能球的[gold]被动[/gold]{Time:diff()}次。",
 
 	"HARUKA_CARD_GUARD.title": "卫护",
-	"HARUKA_CARD_GUARD.description":"[gold]澪[/gold]入场并获得{MioHpPower:diff()}点[gold]最大生命[/gold]。\n[gold]澪[/gold]抵挡伤害时，使[gold]澪[/gold]和[gold]遥[/gold]获得{MioEnhancePower:diff()}点[gold]格挡[/gold]。",
+	"HARUKA_CARD_GUARD.description":"[gold]澪[/gold]入场并获得{MioHpPower:diff()}点[gold]最大生命[/gold]。\n[gold]澪[/gold]每回合首次抵挡伤害时，使[gold]遥[/gold]获得{MioEnhancePower:diff()}点[gold]格挡[/gold]，并将一张免费的[gold]斩[/gold]放入手牌。",
 
 	"HARUKA_CARD_RESERVED.title": "矜持",
 	"HARUKA_CARD_RESERVED.description":"本回合保留你的手牌。\n[gold]生成[/gold]1个[gold]浮泡[/gold]充能球。",

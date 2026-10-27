@@ -42,7 +42,11 @@ public class DeterminedPower : AbstractHarukaPower
         {
             return 0m;
         }
-        if (cardSource.Type != CardType.Attack && !(cardSource.Pool is ColorlessCardPool || cardSource.Pool is TokenCardPool))
+        if (cardSource.Type != CardType.Attack)
+        {
+            return 0m;
+        }
+        if (!(cardSource.Pool is ColorlessCardPool || cardSource.Pool is TokenCardPool || cardSource.Rarity == CardRarity.Token))
         {
             return 0m;
         }

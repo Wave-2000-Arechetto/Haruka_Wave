@@ -18,6 +18,7 @@ using Haruka.Scripts.Monster;
 using STS2RitsuLib.Cards.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 using Haruka.Scripts.Enums;
+using Haruka.Scripts.Cards.Token;
 
 
 
@@ -35,11 +36,11 @@ namespace Haruka.Scripts.Cards.Rare
         
         protected override IEnumerable<DynamicVar> CanonicalVars =>
 [
-    new PowerVar<MioEnhancePower>(2),
+    new PowerVar<MioEnhancePower>(6),
     new PowerVar<MioHpPower>(4),
 ];
 
-        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromKeyword(HarukaKeywords.MioKeyword)];
+        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromKeyword(HarukaKeywords.MioKeyword), HoverTipFactory.FromCard<Slash>()];
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => [
         

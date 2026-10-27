@@ -67,8 +67,8 @@
     "HARUKA_POWER_MIO_HP_POWER.smartDescription": "[gold]澪[/gold]在本场战斗中获得[blue]{Amount}[/blue]点[gold]最大生命[/gold]。", 
     "HARUKA_POWER_MIO_HP_POWER.title": "卫护",
 
-    "HARUKA_POWER_MIO_ENHANCE_POWER.description": "[gold]澪[/gold]格挡伤害后，使[gold]澪[/gold]和[gold]遥[/gold]获得[blue]{Amount}[/blue]点[gold]格挡[/gold]。",
-    "HARUKA_POWER_MIO_ENHANCE_POWER.smartDescription": "[gold]澪[/gold]格挡伤害后，使[gold]澪[/gold]和[gold]遥[/gold]获得[blue]{Amount}[/blue]点[gold]格挡[/gold]。", 
+    "HARUKA_POWER_MIO_ENHANCE_POWER.description": "[gold]澪[/gold]每回合首次格挡伤害后，使[gold]遥[/gold]获得[blue]{Amount}[/blue]点[gold]格挡[/gold]，并将一张免费的[gold]斩[/gold]放入手牌。",
+    "HARUKA_POWER_MIO_ENHANCE_POWER.smartDescription": "[gold]澪[/gold]每回合首次格挡伤害后，使[gold]遥[/gold]获得[blue]{Amount}[/blue]点[gold]格挡[/gold]，并将一张免费的[gold]斩[/gold]放入手牌。", 
     "HARUKA_POWER_MIO_ENHANCE_POWER.title": "振刀",
 
     "HARUKA_POWER_INTO_PLAY_POWER.description": "[gold]情绪[/gold]的效果提高[blue]{Amount}[/blue]倍。",
@@ -82,6 +82,14 @@
     "HARUKA_POWER_DETERMINED_POWER.description": "你的[gold]无色攻击牌[/gold]造成的伤害提高[blue]{Amount}[/blue]。",
     "HARUKA_POWER_DETERMINED_POWER.smartDescription": "你的[gold]无色攻击牌[/gold]造成的伤害提高[blue]{Amount}[/blue]。", 
     "HARUKA_POWER_DETERMINED_POWER.title": "决意",
+
+    "HARUKA_POWER_OPPONENT_POWER.description": "[gold]澪[/gold]在这回合对其造成的伤害变为2倍。",
+    "HARUKA_POWER_OPPONENT_POWER.smartDescription": "[gold]澪[/gold]在这回合对其造成的伤害变为2倍。", 
+    "HARUKA_POWER_OPPONENT_POWER.title": "好敌手",
+
+    "HARUKA_POWER_WAIT_OPPONENT_POWER.description": "在下个回合，[gold]澪[/gold]对其造成的伤害变为2倍。",
+    "HARUKA_POWER_WAIT_OPPONENT_POWER.smartDescription": "在下个回合，[gold]澪[/gold]对其造成的伤害变为2倍。", 
+    "HARUKA_POWER_WAIT_OPPONENT_POWER.title": "等待对手",
 
     
 
