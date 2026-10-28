@@ -152,36 +152,7 @@
 
     "HARUKA_POWER_HASUKE_POWER.description": "下[blue]{Amount}[/blue]次生成[gold]无色牌[/gold]时，为其[purple]附魔：[/purple][gold]播种[/gold]。",
     "HARUKA_POWER_HASUKE_POWER.smartDescription": "下[blue]{Amount}[/blue]次生成[gold]无色牌[/gold]时，为其[purple]附魔：[/purple][gold]播种[/gold]。", 
-    "HARUKA_POWER_HASUKE_POWER.title": "叶助",
-
-    "HARUKA_POWER_TWO_POWER_HARUKA.description": "在进入后造成1次不小于[blue]20[/blue]的伤害后成功，现已造成[blue]{PerformanceAmount:diff()}[/blue]次伤害。",
-    "HARUKA_POWER_TWO_POWER_HARUKA.smartDescription": "在进入后造成1次不小于[blue]20[/blue]的伤害后成功，现已造成[blue]{PerformanceAmount:diff()}[/blue]次伤害。", 
-    "HARUKA_POWER_TWO_POWER_HARUKA.title": "第二阶段：预热",
-
-    "HARUKA_POWER_THREE_POWER_HARUKA.description": "在进入后造成[blue]50[/blue]点伤害后成功，现已造成[blue]{PerformanceAmount:diff()}[/blue]点伤害。",
-    "HARUKA_POWER_THREE_POWER_HARUKA.smartDescription": "在进入后造成[blue]50[/blue]点伤害后成功，现已造成[blue]{PerformanceAmount:diff()}[/blue]点伤害。", 
-    "HARUKA_POWER_THREE_POWER_HARUKA.title": "第三阶段：高潮",
-
-    "HARUKA_POWER_SPICY_FOOD_POWER.description": "[gold]沙地兽[/gold]本场战斗内打出后获得[blue]{Amount}[/blue]层[gold]活力[/gold]。",
-    "HARUKA_POWER_SPICY_FOOD_POWER.smartDescription": "[gold]沙地兽[/gold]本场战斗内打出后获得[blue]{Amount}[/blue]层[gold]活力[/gold]。", 
-    "HARUKA_POWER_SPICY_FOOD_POWER.title": "劲辣饲料",
-
-    "HARUKA_POWER_BONE_FOOD_POWER.description": "[gold]沙地兽[/gold]本场战斗内打出后获得[blue]{Amount}[/blue]层[gold]荆棘[/gold]。",
-    "HARUKA_POWER_BONE_FOOD_POWER.smartDescription": "[gold]沙地兽[/gold]本场战斗内打出后获得[blue]{Amount}[/blue]层[gold]荆棘[/gold]。", 
-    "HARUKA_POWER_BONE_FOOD_POWER.title": "骨质饲料",
-
-    "HARUKA_POWER_TOUGH_FOOD_POWER.description": "[gold]沙地兽[/gold]本场战斗内打出后获得[blue]{Amount}[/blue]点[gold]格挡[/gold]。", 
-    "HARUKA_POWER_TOUGH_FOOD_POWER.smartDescription": "[gold]沙地兽[/gold]本场战斗内打出后获得[blue]{Amount}[/blue]点[gold]格挡[/gold]。", 
-    "HARUKA_POWER_TOUGH_FOOD_POWER.title": "韧皮饲料",
-
-
-    "HARUKA_POWER_PIONEER_POWER.description": "如果你这回合不受到伤害，在下回合开始时，将[gold]下矿[/gold]放入其他玩家的手牌。\n现有已受到[blue]{DamageAmount:diff()}[/blue]点[gold]伤害[/gold]。",
-    "HARUKA_POWER_PIONEER_POWER.smartDescription": "如果你这回合不受到伤害，在下回合开始时，将[gold]下矿[/gold]放入其他玩家的手牌。\n现有已受到[blue]{DamageAmount:diff()}[/blue]点[gold]伤害[/gold]。", 
-    "HARUKA_POWER_PIONEER_POWER.title": "矿区先锋",
-
-    "HARUKA_POWER_IN_DARK_POWER.description": "下[blue]{PassiveAmount:diff()}[/blue]张[gold]伏击[/gold]牌额外无条件触发1次[gold]伏击成功[/gold]效果。",
-    "HARUKA_POWER_IN_DARK_POWER.smartDescription": "下[blue]{PassiveAmount:diff()}[/blue]张[gold]伏击[/gold]牌额外无条件触发1次[gold]伏击成功[/gold]效果。", 
-    "HARUKA_POWER_IN_DARK_POWER.title": "敌明我暗"
+    "HARUKA_POWER_HASUKE_POWER.title": "叶助"
 
 
     
