@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7f1hy7wt355v"
-path="res://.godot/imported/see_the_light_power.png-8170357e96c4ed3acfc35126a8815296.ctex"
+uid="uid://203yp5xo3jnq"
+path="res://.godot/imported/apply_hasuke_power.png-96c5d6033cc2f3660ab2da3cd4f8c5c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Haruka/images/powers/see_the_light_power.png"
-dest_files=["res://.godot/imported/see_the_light_power.png-8170357e96c4ed3acfc35126a8815296.ctex"]
+source_file="res://Haruka/images/powers/apply_hasuke_power.png"
+dest_files=["res://.godot/imported/apply_hasuke_power.png-96c5d6033cc2f3660ab2da3cd4f8c5c8.ctex"]
 
 [params]
 
