@@ -3,6 +3,7 @@ using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using STS2RitsuLib.Combat.Ui.ExtraCornerAmountLabels;
 using Test.Scripts;
 
 public sealed class ScenePower : AbstractHarukaPower
@@ -11,6 +12,14 @@ public sealed class ScenePower : AbstractHarukaPower
 	{
 		public int cardsLeft = 12;
 	}
+
+	public event Action? PowerExtraIconAmountLabelsInvalidated;
+
+    public IReadOnlyList<ExtraIconAmountLabelSpec> GetPowerExtraIconAmountLabelSpecs() =>
+    [
+        ExtraIconAmountLabelSpec.Plain(ExtraIconAmountLabelCorner.BottomRight,
+            $"{_baseCardsLeft - GetInternalData<Data>().cardsLeft}")
+    ];
 
 	private const int _baseCardsLeft = 12;
 
@@ -34,7 +43,7 @@ public sealed class ScenePower : AbstractHarukaPower
 	public override async Task AfterCardDrawn(PlayerChoiceContext choiceContext, CardModel card, bool fromHandDraw)
 	{
 		if (card.Owner != Owner.Player) return;
-
+		
     	Data data = GetInternalData<Data>();
     	data.cardsLeft--;
     	if (data.cardsLeft < 12) return;
@@ -42,5 +51,6 @@ public sealed class ScenePower : AbstractHarukaPower
     	data.cardsLeft = 0;
     	Flash();
     	await OrbCmd.Channel<BubbleOrb>(new BlockingPlayerChoiceContext(), Owner.Player);
+		PowerExtraIconAmountLabelsInvalidated?.Invoke();
 	}
 }
