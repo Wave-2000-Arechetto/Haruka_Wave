@@ -1,0 +1,17 @@
+{
+  "HARUKA_RELIC_PROTECT_BUBBLE.title": "Fleeting Bubble",
+  "HARUKA_RELIC_PROTECT_BUBBLE.description": "At the start of combat, [gold]Channel[/gold] 1 [gold]Bubble[gold] Orb.",
+  "HARUKA_RELIC_PROTECT_BUBBLE.flavor": "",
+  "HARUKA_RELIC_PROTECT_PLUS_BUBBLE.title": "Shimmering Foam",
+  "HARUKA_RELIC_PROTECT_PLUS_BUBBLE.description": "At the start of combat, [gold]Channel[/gold] 1 [gold]Bubble[gold] Orb.\nAfter a [gold]Bubble is Evoked[/gold], heal 2 HP. (Up to 4 times per combat.)",
+  "HARUKA_RELIC_PROTECT_PLUS_BUBBLE.flavor": "",
+  "HARUKA_RELIC_CARROT_PIE.title": "Carrot Pie",
+  "HARUKA_RELIC_CARROT_PIE.description": "At the end of your turn, gain 1 [gold]Vigor[/gold] for each card in your hand.",
+  "HARUKA_RELIC_CARROT_PIE.flavor": "Little Potlid's masterpiece.",
+  "HARUKA_RELIC_PICKAXE.title": "Pickaxe",
+  "HARUKA_RELIC_PICKAXE.description": "The first time you deal more than [blue]15[/blue] [gold]attack damage[/gold] each turn, draw 1 card.",
+  "HARUKA_RELIC_PICKAXE.flavor": "",
+  "HARUKA_RELIC_BACK_PACK.title": "Desert Backpack",
+  "HARUKA_RELIC_BACK_PACK.description": "At the start of each combat, add 1 random card from your draw pile that can grant [gold]Block[/gold] to your hand. It costs 0 this turn.",
+  "HARUKA_RELIC_BACK_PACK.flavor": ""
+}

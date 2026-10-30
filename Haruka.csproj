@@ -12,7 +12,7 @@
 
 
 
-    <Sts2Dir>G:\SteamLibrary\steamapps\common\Slay the Spire 2</Sts2Dir>
+    <Sts2Dir>D:\steam\steamapps\common\Slay the Spire 2</Sts2Dir>
 
     <Sts2DataDir>$(Sts2Dir)\data_sts2_windows_x86_64</Sts2DataDir>
 

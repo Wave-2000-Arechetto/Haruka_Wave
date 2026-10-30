@@ -6,17 +6,7 @@
 
     "HARUKA_RELIC_PROTECT_PLUS_BUBBLE.title": "浮光泡影",
     "HARUKA_RELIC_PROTECT_PLUS_BUBBLE.description": "战斗开始时，[gold]生成[/gold]1个[gold]浮泡[gold]充能球。\n[gold]浮泡激发[/gold]后，回复2点生命。（每场对战限4次）",
-    "HARUKA_RELIC_PROTECT_PLUS_BUBBLE.flavor": "",
+    "HARUKA_RELIC_PROTECT_PLUS_BUBBLE.flavor": ""
 
-    "HARUKA_RELIC_CARROT_PIE.title": "胡萝卜派",
-    "HARUKA_RELIC_CARROT_PIE.description": "你的回合结束时，每有1张手牌，获得1层[gold]活力[/gold]。",
-    "HARUKA_RELIC_CARROT_PIE.flavor": "小锅盖的得意之作。",
-
-    "HARUKA_RELIC_PICKAXE.title": "矿镐",
-    "HARUKA_RELIC_PICKAXE.description": "你每回合第一次造成大于[blue]15[/blue]点的[gold]攻击伤害[/gold]后，抽1张牌。",
-    "HARUKA_RELIC_PICKAXE.flavor": "",
-
-    "HARUKA_RELIC_BACK_PACK.title": "沙地背包",
-    "HARUKA_RELIC_BACK_PACK.description": "每场战斗开始时，随机将1张可以获得[gold]格挡[/gold]的牌从抽牌堆放入手牌，其耗能本回合为0。",
-    "HARUKA_RELIC_BACK_PACK.flavor": ""
+    
 }

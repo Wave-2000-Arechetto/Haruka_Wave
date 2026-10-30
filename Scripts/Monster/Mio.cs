@@ -39,9 +39,9 @@ public class Mio : ModMinionTemplate
     // 位置与大小
     // ============================================================
 
-    public static Vector2 MinOffset => new Vector2(300f, -75f);
+    public static Vector2 MinOffset => new Vector2(320f, -75f);
 
-    public static Vector2 MaxOffset => new Vector2(300f, -75f);
+    public static Vector2 MaxOffset => new Vector2(320f, -75f);
 
     public static Vector2 ScaleRange => new Vector2(1f, 2f);
 

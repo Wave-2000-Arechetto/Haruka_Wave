@@ -1,7 +1,5 @@
 {
-    "HARUKA_POWER_BUBBLE_POWER.description": "你即将受到超出格挡的攻击时，[gold]浮泡[/gold]破碎并获得5点[gold]格挡[/gold]。",
-    "HARUKA_POWER_BUBBLE_POWER.smartDescription": "你即将受到超出格挡的攻击时，[gold]浮泡[/gold]破碎并获得5点[gold]格挡[/gold]。", 
-    "HARUKA_POWER_BUBBLE_POWER.title": "浮泡",
+    
 
     "HARUKA_POWER_CALM_POWER.description": "目前情绪为[gold]平静[/gold]。",
     "HARUKA_POWER_CALM_POWER.smartDescription": "目前情绪为[gold]平静[/gold]。", 
@@ -23,8 +21,8 @@
     "HARUKA_POWER_CELEBRITY_POWER.smartDescription": "本回合获得[blue]{Amount}[/blue]点[gold]集中[/gold]。", 
     "HARUKA_POWER_CELEBRITY_POWER.title": "明星效应",
 
-    "HARUKA_POWER_FINS_POWER.description": "每当[gold]浮泡[/gold]破碎时，使攻击的敌人[gold]浮空[/gold]（不因攻击而破碎的场合目标随机选择）。",
-    "HARUKA_POWER_FINS_POWER.smartDescription": "每当[gold]浮泡[/gold]破碎时，使攻击的敌人[gold]浮空[/gold]（不因攻击而破碎的场合目标随机选择）。", 
+    "HARUKA_POWER_FINS_POWER.description": "每当[gold]浮泡激发[/gold]时，使攻击的敌人[gold]浮空[/gold]（不因攻击而激发的场合目标随机选择）。",
+    "HARUKA_POWER_FINS_POWER.smartDescription": "每当[gold]浮泡激发[/gold]时，使攻击的敌人[gold]浮空[/gold]（不因攻击而激发的场合目标随机选择）。", 
     "HARUKA_POWER_FINS_POWER.title": "游鳞",
 
     "HARUKA_POWER_FLOAT_POWER.description": "造成的伤害减少50%。\n在受到伤害或回合结束时坠落，受到[blue]10[/blue]点伤害并获得1层[gold]易伤[/gold]。",

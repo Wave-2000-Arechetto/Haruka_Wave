@@ -100,14 +100,6 @@
 	"HARUKA_CARD_SUPERNATURAL_SPECIAL.title": "灵异特辑",
 	"HARUKA_CARD_SUPERNATURAL_SPECIAL.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n如果你处于[gold]恐惧[/gold]，再获得{Extra:diff()}点。",
 
-	"HARUKA_CARD_SAFE_HOUSE.title": "安全屋",
-	"HARUKA_CARD_SAFE_HOUSE.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n获得{Bullet:secondaryResourceIcons(2)}。",
-
-	"HARUKA_CARD_HUNT_GAIN.title": "猎获",
-	"HARUKA_CARD_HUNT_GAIN.description": "抽{Cards:diff()}张牌。",
-    "HARUKA_CARD_HUNT_GAIN.selectionScreenPrompt": "选择一张手牌附魔",
-
-
 
 
 
@@ -273,10 +265,7 @@
 
 	"HARUKA_CARD_INTO_PLAY.title":"入戏",
 	"HARUKA_CARD_INTO_PLAY.description": "[gold]情绪[/gold]的效果提高1倍。",
-
-	"HARUKA_CARD_NO_KAMI.title":"无神明的夜晚",
-	"HARUKA_CARD_NO_KAMI.description": "[gold]平复[/gold]1，如果你因此进入[gold]平静[/gold]，获得{energyPrefix:energyIcons(2)}并抽{Cards:diff()}张牌。",
-
+	
 	"HARUKA_CARD_RUIN.title":"锻冶遗迹",
 	"HARUKA_CARD_RUIN.description": "造成{Damage:diff()}点伤害。\n[gold]激发[/gold]所有充能球，然后获得等量数量的充能球栏位。",
 

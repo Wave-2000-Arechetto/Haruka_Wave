@@ -1,0 +1,16 @@
+{
+  "HARUKA_KEYWORD_BUBBLE.description": "When you are about to take attack damage exceeding your Block, a [gold]Bubble[/gold] is [gold]Evoked[/gold] and grants [gold]Block[/gold] equal to its stacks.",
+  "HARUKA_KEYWORD_BUBBLE.title": "Bubble",
+  "HARUKA_KEYWORD_SCARE.title": "Scare",
+  "HARUKA_KEYWORD_SCARE.description": "Reduce your [gold]Emotion value[/gold] by the specified amount.",
+  "HARUKA_KEYWORD_INSPIRE.title": "Inspire",
+  "HARUKA_KEYWORD_INSPIRE.description": "Increase your [gold]Emotion value[/gold] by the specified amount.",
+  "HARUKA_KEYWORD_CALM.title": "Soothe",
+  "HARUKA_KEYWORD_CALM.description": "Move your [gold]Emotion value[/gold] toward 0 by the specified amount.",
+  "HARUKA_KEYWORD_CHANNEL_ON_FRONT.title": "Channel at the Front",
+  "HARUKA_KEYWORD_CHANNEL_ON_FRONT.description": "Existing Orbs move backward, and the rearmost Orb is [gold]Evoked[/gold].",
+  "HARUKA_KEYWORD_MIO.title": "Mio",
+  "HARUKA_KEYWORD_MIO.description": "(HP 12/12)\nWhile [gold]Mio[/gold] is on the field, she takes half of [gold]Haruka[/gold]'s HP loss. If she enters the field again while already present, she recovers all HP.",
+  "HARUKA_KEYWORD_FLOAT.title": "Levitate",
+  "HARUKA_KEYWORD_FLOAT.description": "Deals 50% less damage.\nFalls after taking attack damage or at the end of its turn, taking [blue]10[/blue] damage and gaining 1 [gold]Vulnerable[/gold]."
+}

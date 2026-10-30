@@ -41,9 +41,9 @@ namespace Haruka.Scripts.Cards.Uncommon
 
             for (int i = 0; i<2; i++)
             {
-                int num = Owner.RunState.Rng.CombatTargets.NextInt(minGlass - 1, maxGlass + 1);
+                int num = Owner.RunState.Rng.CombatTargets.NextInt(minGlass, maxGlass + 1);
                 OrbModel glass = ModelDb.Orb<GlassOrb>().ToMutable();
-                if (glass is GlassOrb glassOrb && num > 0)
+                if (glass is GlassOrb glassOrb)
                 {
                     glassOrb._passiveVal = num;
                     await OrbCmd.Channel(choiceContext, glass, Owner);

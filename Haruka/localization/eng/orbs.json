@@ -1,0 +1,14 @@
+{
+  "HARUKA_ORB_BUBBLE_ORB.description": "Gain Block when [gold]Evoked[/gold].",
+  "HARUKA_ORB_BUBBLE_ORB.smartDescription": "[gold]Passive:[/gold] Increase this Orb's stacks by [blue]{Passive}[/blue].\n[gold]Evoke:[/gold] Gain [blue]{Evoke}[/blue] [gold]Block[/gold] (not affected by [gold]Focus[/gold]).\nWhenever you are attacked, if the damage cannot be fully [gold]Blocked[/gold] and this is the [gold]leftmost[/gold] Orb, [gold]Evoke[/gold] it.",
+  "HARUKA_ORB_BUBBLE_ORB.title": "Bubble",
+  "HARUKA_ORB_FIREWORK_ORB.description": "Its [gold]Passive[/gold] and [gold]Evoke[/gold] consume stacks to draw cards. (Not affected by [gold]Focus[/gold])",
+  "HARUKA_ORB_FIREWORK_ORB.smartDescription": "Starts with 4 Passive stacks.\n[gold]Passive:[/gold] Draw 1 card and lose 1 Passive stack.\n[gold]Evoke:[/gold] Draw cards equal to its [gold]Passive[/gold] stacks + 1.",
+  "HARUKA_ORB_FIREWORK_ORB.title": "Firework",
+  "HARUKA_ORB_SPOTLIGHT_ORB.description": "Its [gold]Passive[/gold] deals damage. Its [gold]Evoke[/gold] grants Vigor to [gold]Haruka[/gold] and [gold]Mio[/gold].",
+  "HARUKA_ORB_SPOTLIGHT_ORB.smartDescription": "[gold]Passive:[/gold] Deal [blue]{Passive}[/blue] [gold]damage[/gold] twice.\n[gold]Evoke:[/gold] [gold]Haruka[/gold] and [gold]Mio[/gold] gain [blue]{Evoke}[/blue] [gold]Vigor[/gold].",
+  "HARUKA_ORB_SPOTLIGHT_ORB.title": "Spotlight",
+  "HARUKA_ORB_CERTAIN_FATE_ORB.description": "Its [gold]Passive[/gold] and [gold]Evoke[/gold] accelerate Orb [gold]Evocation[/gold].",
+  "HARUKA_ORB_CERTAIN_FATE_ORB.smartDescription": "[gold]Passive:[/gold] If the leftmost Orb is not a [gold]\"Certain Fate\"[/gold], [gold]Evoke[/gold] it and Channel 1 copy of it.\n\n[gold]Evoke:[/gold] If [gold]Mio[/gold] is on the field, [gold]Evoke[/gold] all Orbs behind this Orb. For each that is not a [gold]\"Certain Fate\"[/gold], [gold]Channel 1 copy at the front[/gold].",
+  "HARUKA_ORB_CERTAIN_FATE_ORB.title": "\"Certain Fate\""
+}
