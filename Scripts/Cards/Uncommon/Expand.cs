@@ -37,10 +37,9 @@ namespace Haruka.Scripts.Cards.Uncommon
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
             await OrbCmd.AddSlots(Owner, DynamicVars["Number"].IntValue);
-            for (int i = 0; i < DynamicVars["Number"].IntValue; i++)
-            {
-                await OrbCmd.Channel<SpotlightOrb>(choiceContext, Owner);
-            }
+            
+            await OrbCmd.Channel<SpotlightOrb>(choiceContext, Owner);
+            
         }
 
         public Expand() : base(energyCost, type, rarity, targetType)

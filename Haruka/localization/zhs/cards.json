@@ -204,8 +204,8 @@
 	"HARUKA_CARD_JOYFUL.title": "平凡即为喜乐",
 	"HARUKA_CARD_JOYFUL.description":"每当你进入[gold]平静[/gold]时，抽{JoyfulPower:diff()}张牌。",
 
-	"HARUKA_CARD_PROTECT_TO_BACK.title": "护至身后",
-	"HARUKA_CARD_PROTECT_TO_BACK.description":"获得{Block:diff()}点[gold]格挡[/gold]，你下一张[gold]无色牌[/gold]的耗能降至0。",
+	"HARUKA_CARD_VEILED.title": "氤氲",
+	"HARUKA_CARD_VEILED.description":"[gold]生成[/gold]1个[gold]浮泡[/gold]充能球。\n[gold]激发[/gold]最前方的充能球直到其为[gold]浮泡[/gold]充能球。",
 
 	"HARUKA_CARD_DELICATE.title": "楚楚可怜",
 	"HARUKA_CARD_DELICATE.description":"给予所有敌人1点[gold]虚弱[/gold]，1点[gold]易伤[/gold]。\n[gold]激发[/gold]最前方的充能球以重复1次。",
@@ -265,7 +265,7 @@
 
 	"HARUKA_CARD_INTO_PLAY.title":"入戏",
 	"HARUKA_CARD_INTO_PLAY.description": "[gold]情绪[/gold]的效果提高1倍。",
-	
+
 	"HARUKA_CARD_RUIN.title":"锻冶遗迹",
 	"HARUKA_CARD_RUIN.description": "造成{Damage:diff()}点伤害。\n[gold]激发[/gold]所有充能球，然后获得等量数量的充能球栏位。",
 

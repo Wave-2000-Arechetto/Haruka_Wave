@@ -13,36 +13,36 @@ using Haruka.Scripts.UI;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models.Orbs;
 using Test.Scripts;
-using MegaCrit.Sts2.Core.Models;
-using STS2RitsuLib.Scaffolding.Characters;
 
 
 
 namespace Haruka.Scripts.Cards.Uncommon
 {
     [RegisterCard(typeof(HarukaCardPool))]
-    public class Charity : HarukaCard
+    public class Veiled : HarukaCard
     {
-        private const int energyCost = 0;
+        private const int energyCost = 1;
         private const CardType type = CardType.Skill;
         private const CardRarity rarity = CardRarity.Uncommon;
-        private const TargetType targetType = TargetType.AnyEnemy;
+        private const TargetType targetType = TargetType.Self;
         private const bool shouldShowInCardLibrary = true;
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(2)];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(8, ValueProp.Move)];
 
-        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [];
+        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromOrb<BubbleOrb>()];
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            if (Owner.PlayerCombatState!.OrbQueue.Orbs.Count < Owner.GetOrbCapacity())
+            await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, cardPlay);
+            await OrbCmd.Channel<BubbleOrb>(choiceContext, Owner);
+
+            while (Owner.PlayerCombatState!.OrbQueue.Orbs[0] is BubbleOrb || Owner.PlayerCombatState!.OrbQueue.Orbs[0] == null)
             {
-                OrbCmd.RemoveSlots(Owner, 1);
-                await PlayerCmd.GainEnergy(DynamicVars["Energy"].IntValue, Owner);
+                await OrbCmd.EvokeNext(choiceContext, Owner);
             }
         }
 
-        public Charity() : base(energyCost, type, rarity, targetType)
+        public Veiled() : base(energyCost, type, rarity, targetType)
         {
             
         }
@@ -57,7 +57,8 @@ namespace Haruka.Scripts.Cards.Uncommon
         // 升级后的效果逻辑
         protected override void OnUpgrade()
         {
-            DynamicVars["Energy"].UpgradeValueBy(1);
+            DynamicVars["Block"].UpgradeValueBy(3);
+            
         }
     }
 }

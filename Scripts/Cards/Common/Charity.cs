@@ -12,31 +12,37 @@ using MegaCrit.Sts2.Core.ValueProps;
 using Haruka.Scripts.UI;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models.Orbs;
+using Test.Scripts;
+using MegaCrit.Sts2.Core.Models;
+using STS2RitsuLib.Scaffolding.Characters;
 
 
 
 namespace Haruka.Scripts.Cards.Common
 {
     [RegisterCard(typeof(HarukaCardPool))]
-    public class ProtectToBack : HarukaCard
+    public class Charity : HarukaCard
     {
-        private const int energyCost = 1;
+        private const int energyCost = 0;
         private const CardType type = CardType.Skill;
         private const CardRarity rarity = CardRarity.Common;
         private const TargetType targetType = TargetType.Self;
         private const bool shouldShowInCardLibrary = true;
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(7, ValueProp.Move)];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(2)];
 
         protected override IEnumerable<IHoverTip> AdditionalHoverTips => [];
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, cardPlay);
-            await PowerCmd.Apply<ColorlessFreePower>(choiceContext, Owner.Creature, 1, Owner.Creature, cardPlay.Card);
+            if (Owner.PlayerCombatState!.OrbQueue.Orbs.Count < Owner.GetOrbCapacity())
+            {
+                OrbCmd.RemoveSlots(Owner, 1);
+                await PlayerCmd.GainEnergy(DynamicVars["Energy"].IntValue, Owner);
+            }
         }
 
-        public ProtectToBack() : base(energyCost, type, rarity, targetType)
+        public Charity() : base(energyCost, type, rarity, targetType)
         {
             
         }
@@ -51,8 +57,7 @@ namespace Haruka.Scripts.Cards.Common
         // 升级后的效果逻辑
         protected override void OnUpgrade()
         {
-            DynamicVars["Block"].UpgradeValueBy(3);
-            
+            DynamicVars["Energy"].UpgradeValueBy(1);
         }
     }
 }

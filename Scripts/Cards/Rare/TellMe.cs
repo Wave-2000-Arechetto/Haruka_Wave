@@ -32,7 +32,7 @@ namespace Haruka.Scripts.Cards.Rare
 
         protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4, ValueProp.Move)];
 
-        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromKeyword(HarukaKeywords.CalmKeyword)];
+        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [];
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => [];
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
