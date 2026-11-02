@@ -27,16 +27,17 @@ namespace Haruka.Scripts.Cards.Uncommon
         private const TargetType targetType = TargetType.Self;
         private const bool shouldShowInCardLibrary = true;
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(8, ValueProp.Move)];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [];
 
         protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromOrb<BubbleOrb>()];
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, cardPlay);
+            
             await OrbCmd.Channel<BubbleOrb>(choiceContext, Owner);
 
-            while (Owner.PlayerCombatState!.OrbQueue.Orbs[0] is BubbleOrb || Owner.PlayerCombatState!.OrbQueue.Orbs[0] == null)
+             
+            while (Owner.PlayerCombatState!.OrbQueue.Orbs.Count > 0 && Owner.PlayerCombatState!.OrbQueue.Orbs[0] is not BubbleOrb)
             {
                 await OrbCmd.EvokeNext(choiceContext, Owner);
             }
@@ -57,7 +58,7 @@ namespace Haruka.Scripts.Cards.Uncommon
         // 升级后的效果逻辑
         protected override void OnUpgrade()
         {
-            DynamicVars["Block"].UpgradeValueBy(3);
+            
             
         }
     }

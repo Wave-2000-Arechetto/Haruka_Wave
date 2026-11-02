@@ -155,7 +155,7 @@
 	"HARUKA_CARD_LIMITED_COLLABORATION.description": "随机在最前方[gold]生成[/gold]1个随机充能球，并触发其[gold]被动[/gold]效果{IfUpgraded:show:2次|}。",
 
 	"HARUKA_CARD_KICHISEI.title": "吉星高照！",
-	"HARUKA_CARD_KICHISEI.description": "本场战斗你每[gold]生成[/gold]过1种类充能球，造成{Damage:diff()}点伤害1次。",
+	"HARUKA_CARD_KICHISEI.description": "本场战斗你每[gold]生成[/gold]过1种类充能球，造成{Damage:diff()}点伤害1次。{InCombat:(造成{Hits:diff()}次伤害。)|}",
 
 	"HARUKA_CARD_POPULAR_SONG.title": "当红歌曲",
 	"HARUKA_CARD_POPULAR_SONG.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n触发最前方的充能球的[gold]被动[/gold]{Time:diff()}次。",

@@ -25,7 +25,7 @@ public class BubbleOrb : ModOrbTemplate
 
     private int passiveVal = 1;
 
-    private int evokeVal = 4;
+    private int evokeVal = 2;
     public override decimal PassiveVal => ModifyOrbValue(passiveVal);
 
     // 激发效果数值
@@ -62,6 +62,7 @@ public class BubbleOrb : ModOrbTemplate
     // 触发被动
     public override async Task Passive(PlayerChoiceContext choiceContext, Creature? target)
     {
+        await CreatureCmd.GainBlock(Owner.Creature, PassiveVal, ValueProp.Unpowered, null);
         evokeVal = (int)PassiveVal + evokeVal;
         
     }

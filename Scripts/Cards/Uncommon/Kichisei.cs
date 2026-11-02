@@ -23,6 +23,7 @@ using Test.Scripts;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Combat.History.Entries;
+using STS2RitsuLib.Cards.DynamicVars;
 
 
 
@@ -37,7 +38,23 @@ namespace Haruka.Scripts.Cards.Uncommon
         private const TargetType targetType = TargetType.AnyEnemy;
         private const bool shouldShowInCardLibrary = true;
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move)];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [
+            new DamageVar(6, ValueProp.Move),
+            ModCardVars.Computed("Hits", 0m, card => CountHits(card)),
+        ];
+
+        private static decimal CountHits(CardModel? card)
+{
+    if (card is not { IsMutable: true }) return 0m;
+    var owner = card?.Owner;
+    if (owner == null || !CombatManager.Instance.IsInProgress) return 0m;
+    return CombatManager.Instance.History.Entries
+        .OfType<OrbChanneledEntry>()
+        .Where(e => e.Orb.Owner == owner)
+        .Select(e => e.Orb.GetType())
+        .Distinct()
+        .Count();
+}
 
         protected override IEnumerable<IHoverTip> AdditionalHoverTips => [];
 
@@ -45,27 +62,10 @@ namespace Haruka.Scripts.Cards.Uncommon
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            var entries = CombatManager.Instance.History.Entries.ToList();
-    GD
-.Print($"[吉星] 总条目: {entries.Count}");
-    var orbs = entries.OfType<OrbChanneledEntry>().ToList();
-    GD
-.Print($"[吉星] 球条目: {orbs.Count}");
-    foreach (var e in orbs)
-        GD
-.Print($"[吉星]   {e.Orb?.GetType().Name} owner={e.Orb?.Owner?.GetHashCode()} 我的Owner={Owner.GetHashCode()}");
-    
-    int count =
- orbs
-        .Where(e => e.Orb.Owner == Owner)
-        .Select(e => e.Orb.GetType())
-        .Distinct()
-        .Count();
-    GD
-.Print($"[吉星] count={count}");
+            
 
         await DamageCmd.Attack(DynamicVars.Damage.BaseValue)
-            .WithHitCount(count)
+            .WithHitCount((int)CountHits(cardPlay.Card!))
             .FromCard(this, cardPlay)
             .Targeting(cardPlay.Target!)
             .Execute(choiceContext);
