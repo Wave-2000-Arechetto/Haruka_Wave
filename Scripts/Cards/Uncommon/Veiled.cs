@@ -21,7 +21,7 @@ namespace Haruka.Scripts.Cards.Uncommon
     [RegisterCard(typeof(HarukaCardPool))]
     public class Veiled : HarukaCard
     {
-        private const int energyCost = 1;
+        private const int energyCost = 0;
         private const CardType type = CardType.Skill;
         private const CardRarity rarity = CardRarity.Uncommon;
         private const TargetType targetType = TargetType.Self;
@@ -40,6 +40,7 @@ namespace Haruka.Scripts.Cards.Uncommon
             while (Owner.PlayerCombatState!.OrbQueue.Orbs.Count > 0 && Owner.PlayerCombatState!.OrbQueue.Orbs[0] is not BubbleOrb)
             {
                 await OrbCmd.EvokeNext(choiceContext, Owner);
+                await CardPileCmd.Draw(choiceContext, Owner);
             }
         }
 
@@ -59,7 +60,7 @@ namespace Haruka.Scripts.Cards.Uncommon
         protected override void OnUpgrade()
         {
             
-            
+            AddKeyword(CardKeyword.Retain);
         }
     }
 }

@@ -21,6 +21,10 @@
     "HARUKA_POWER_CELEBRITY_POWER.smartDescription": "本回合获得[blue]{Amount}[/blue]点[gold]集中[/gold]。", 
     "HARUKA_POWER_CELEBRITY_POWER.title": "明星效应",
 
+    "HARUKA_POWER_GAIN_SLOT_POWER.description": "在回合开始时获得[blue]{Amount}[/blue]个[gold]充能球栏位[/gold]。",
+    "HARUKA_POWER_GAIN_SLOT_POWER.smartDescription": "在回合开始时获得[blue]{Amount}[/blue]个[gold]充能球栏位[/gold]。", 
+    "HARUKA_POWER_GAIN_SLOT_POWER.title": "获得栏位",
+
     "HARUKA_POWER_FINS_POWER.description": "每当[gold]浮泡激发[/gold]时，使攻击的敌人[gold]浮空[/gold]（不因攻击而激发的场合目标随机选择）。",
     "HARUKA_POWER_FINS_POWER.smartDescription": "每当[gold]浮泡激发[/gold]时，使攻击的敌人[gold]浮空[/gold]（不因攻击而激发的场合目标随机选择）。", 
     "HARUKA_POWER_FINS_POWER.title": "游鳞",

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://emalxtr0bcnn"
-path="res://.godot/imported/extend.png-f4ab80a023c76f70b1d6c314befb41bb.ctex"
+uid="uid://c4mk8diss6t1l"
+path="res://.godot/imported/protect_target.png-f268da41fb4f9f22d4ba47abd5db0a38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Haruka/images/cards/extend.png"
-dest_files=["res://.godot/imported/extend.png-f4ab80a023c76f70b1d6c314befb41bb.ctex"]
+source_file="res://Haruka/images/cards/protect_target.png"
+dest_files=["res://.godot/imported/protect_target.png-f268da41fb4f9f22d4ba47abd5db0a38.ctex"]
 
 [params]
 

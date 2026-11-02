@@ -188,9 +188,7 @@
 	"HARUKA_CARD_FAKE_NEWS.description":"[gold]澪[/gold]入场。\n选择手牌中最多2张牌，将其[gold]变化[/gold]为[gold]斩[/gold]{IfUpgraded:show:+|}。",
 	"HARUKA_CARD_FAKE_NEWS.selectionScreenPrompt": "选择最多2张牌。",
 
-	"HARUKA_CARD_STICKY_NOTE.title": "鳞兽便利贴",
-	"HARUKA_CARD_STICKY_NOTE.description":"选择抽牌堆2张牌，[gold]附魔：[/gold][purple]便利贴[/purple]。",
-	"HARUKA_CARD_STICKY_NOTE.selectionScreenPrompt": "选择最多2张牌。",
+	
 
 	"HARUKA_CARD_SUPPORT.title":"扶持",
 	"HARUKA_CARD_SUPPORT.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n如果[gold]澪[/gold]在场，获得{energyPrefix:energyIcons(1)}。",
@@ -198,14 +196,11 @@
 	"HARUKA_CARD_STUNT.title": "特技动作",
 	"HARUKA_CARD_STUNT.description":"抽{Cards:diff()}张牌。\n你的回合结束时，[gold]惊吓[/gold]3。",
 
-	"HARUKA_CARD_JUST_TRY.title": "体验",
-	"HARUKA_CARD_JUST_TRY.description":"所有其他玩家获得1张[gold]消耗[/gold]的[gold]沙地兽{IfUpgraded:show:+|}[/gold]。",
-
 	"HARUKA_CARD_JOYFUL.title": "平凡即为喜乐",
 	"HARUKA_CARD_JOYFUL.description":"每当你进入[gold]平静[/gold]时，抽{JoyfulPower:diff()}张牌。",
 
 	"HARUKA_CARD_VEILED.title": "氤氲",
-	"HARUKA_CARD_VEILED.description":"[gold]生成[/gold]1个[gold]浮泡[/gold]充能球。\n[gold]激发[/gold]最前方的充能球直到其为[gold]浮泡[/gold]充能球。",
+	"HARUKA_CARD_VEILED.description":"重复直到最前方的充能球为[gold]浮泡[/gold]：\n[gold]激发[/gold]最前方的充能球，抽1张牌。",
 
 	"HARUKA_CARD_DELICATE.title": "楚楚可怜",
 	"HARUKA_CARD_DELICATE.description":"给予所有敌人1点[gold]虚弱[/gold]，1点[gold]易伤[/gold]。\n[gold]激发[/gold]最前方的充能球以重复1次。",
@@ -214,7 +209,7 @@
 	"HARUKA_CARD_SCENE_MACHINE.description":"你每抽12张牌，[gold]生成[/gold]1个[gold]浮泡[/gold]充能球。",
 
 	"HARUKA_CARD_CHARITY.title": "公益演出",
-	"HARUKA_CARD_CHARITY.description":"失去一个空的充能球栏位以获得{IfUpgraded:show:{energyPrefix:energyIcons(3)}|{energyPrefix:energyIcons(2)}}。",
+	"HARUKA_CARD_CHARITY.description":"本回合失去一个充能球栏位以获得{IfUpgraded:show:{energyPrefix:energyIcons(3)}|{energyPrefix:energyIcons(2)}}。",
 	
     "HARUKA_CARD_POISED.title": "蓄势",
 	"HARUKA_CARD_POISED.description":"[gold]澪[/gold]入场。\n将1张[gold]居合[/gold]放入手牌。",

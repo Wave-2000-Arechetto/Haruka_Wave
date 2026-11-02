@@ -35,11 +35,11 @@ namespace Haruka.Scripts.Cards.Common
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            if (Owner.PlayerCombatState!.OrbQueue.Orbs.Count < Owner.GetOrbCapacity())
-            {
-                OrbCmd.RemoveSlots(Owner, 1);
-                await PlayerCmd.GainEnergy(DynamicVars["Energy"].IntValue, Owner);
-            }
+            
+            OrbCmd.RemoveSlots(Owner, 1);
+            await PlayerCmd.GainEnergy(DynamicVars["Energy"].IntValue, Owner);
+            await PowerCmd.Apply<GainSlotPower>(choiceContext, Owner.Creature, 1, Owner.Creature, cardPlay.Card);
+            
         }
 
         public Charity() : base(energyCost, type, rarity, targetType)
@@ -50,6 +50,14 @@ namespace Haruka.Scripts.Cards.Common
         protected override HashSet<CardTag> CanonicalTags => [
         
     ];
+
+        protected override bool IsPlayable
+        {
+            get
+            {
+                return Owner.GetOrbCapacity() > 0;
+            }
+        }
 
    
 

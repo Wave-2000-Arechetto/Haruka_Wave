@@ -67,6 +67,12 @@ namespace Haruka.Scripts.Cards.Rare
             _attachedCardTypes.Clear();
         }
 
+        public override async Task BeforeCombatStart()
+        {
+            _attachedCardTypes.Clear();
+        }
+
+
         public Attached() : base(energyCost, type, rarity, targetType)
         {
         }

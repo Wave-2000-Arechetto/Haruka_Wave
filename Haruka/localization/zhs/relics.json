@@ -6,7 +6,11 @@
 
     "HARUKA_RELIC_PROTECT_PLUS_BUBBLE.title": "浮光泡影",
     "HARUKA_RELIC_PROTECT_PLUS_BUBBLE.description": "战斗开始时，[gold]生成[/gold]1个[gold]浮泡[gold]充能球。\n[gold]浮泡激发[/gold]后，回复2点生命。（每场对战限4次）",
-    "HARUKA_RELIC_PROTECT_PLUS_BUBBLE.flavor": ""
+    "HARUKA_RELIC_PROTECT_PLUS_BUBBLE.flavor": "",
+
+    "HARUKA_RELIC_FISH_STICK.title": "鳞兽便利贴",
+    "HARUKA_RELIC_FISH_STICK.description": "拾起时，选择牌组中的2张牌[gold]附魔[/gold]：[purple]便利贴[/purple]。",
+    "HARUKA_RELIC_FISH_STICK.flavor": "一沓鳞兽形状的便利贴。她说自己会用这个记录接下来的日程，作为一种提醒。"
 
     
 }

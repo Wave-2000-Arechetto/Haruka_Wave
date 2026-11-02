@@ -28,9 +28,9 @@ namespace Haruka.Scripts.Cards.Common
         private const bool shouldShowInCardLibrary = true;
 
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [new IntVar("Turns", 2)];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [new IntVar("Turns", 1)];
 
-        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromOrb<BubbleOrb>(), HoverTipFactory.FromKeyword(HarukaKeywords.InspireKeyword)];
+        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromOrb<BubbleOrb>()];
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
