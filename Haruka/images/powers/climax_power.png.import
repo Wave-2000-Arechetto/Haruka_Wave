@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csm6g7r24smfc"
-path="res://.godot/imported/poem_power.png-cf128ad66ab819ac02e5c06441038cdf.ctex"
+uid="uid://e22o4csqw0by"
+path="res://.godot/imported/climax_power.png-11e7c24b5f4d23aca9a23c44ae3999be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Haruka/images/powers/poem_power.png"
-dest_files=["res://.godot/imported/poem_power.png-cf128ad66ab819ac02e5c06441038cdf.ctex"]
+source_file="res://Haruka/images/powers/climax_power.png"
+dest_files=["res://.godot/imported/climax_power.png-11e7c24b5f4d23aca9a23c44ae3999be.ctex"]
 
 [params]
 

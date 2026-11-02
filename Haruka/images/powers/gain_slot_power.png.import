@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://w6utlt8lf401"
-path="res://.godot/imported/wing_power.png-a03e831162fc0976a9330cd9c6fbb71d.ctex"
+uid="uid://b6234m5h4pruy"
+path="res://.godot/imported/gain_slot_power.png-f039606adac8c5314c7aee5ef199b1b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Haruka/images/powers/wing_power.png"
-dest_files=["res://.godot/imported/wing_power.png-a03e831162fc0976a9330cd9c6fbb71d.ctex"]
+source_file="res://Haruka/images/powers/gain_slot_power.png"
+dest_files=["res://.godot/imported/gain_slot_power.png-f039606adac8c5314c7aee5ef199b1b3.ctex"]
 
 [params]
 
