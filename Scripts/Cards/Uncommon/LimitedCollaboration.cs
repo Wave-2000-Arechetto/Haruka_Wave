@@ -34,7 +34,7 @@ namespace Haruka.Scripts.Cards.Uncommon
         private const TargetType targetType = TargetType.Self;
         private const bool shouldShowInCardLibrary = true;
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [new IntVar("Time", 1)];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [new IntVar("Time", 2)];
 
         protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromKeyword(HarukaKeywords.ChannelOnFrontKeyword)];
 

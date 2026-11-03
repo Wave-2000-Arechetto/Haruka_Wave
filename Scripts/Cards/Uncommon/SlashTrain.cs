@@ -47,7 +47,7 @@ namespace Haruka.Scripts.Cards.Uncommon
         ValueProp.Move)
             ];
 
-        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [];
+        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromKeyword(HarukaKeywords.MioKeyword)];
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => [];
 

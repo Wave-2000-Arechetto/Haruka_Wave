@@ -54,7 +54,7 @@ namespace Haruka.Scripts.Cards.Uncommon
     ];
         protected override IEnumerable<IHoverTip> AdditionalHoverTips
  => [
-            ModKeywordRegistry.CreateHoverTip(HarukaKeywords.CalmKeyword)
+            
         ];
 
         private static int GetEmotionMultiplier(CardModel card, Creature? _)

@@ -31,7 +31,7 @@ namespace Haruka.Scripts.Cards.Uncommon
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => [];
 
-        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [];
+        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromKeyword(CardKeyword.Retain)];
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
