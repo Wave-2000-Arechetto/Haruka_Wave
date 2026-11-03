@@ -31,28 +31,33 @@ public class EntryArrangementsPower : AbstractHarukaPower
 {
     if (side == CombatSide.Player)
         {
+
+            for (int i = 0; i < Amount; i++)
+            {
+                var hand = Owner?.Player?.PlayerCombatState?.Hand?.Cards;
+                if (hand == null) return;
+
+                var candidates = hand
+                    .Where(c => c.Type != CardType.Curse && c.Type != CardType.Status)
+                    .ToList();
+
+                if (candidates.Count == 0) return;
+
+    
+                CardModel? highest = candidates
+                    .OrderByDescending(x => x.EnergyCost.GetAmountToSpend())
+                    .FirstOrDefault();
+
+                if (highest != null)
+                {
+                    highest.GiveSingleTurnRetain();
+                    highest.EnergyCost.AddUntilPlayed(-1);
+                }
+            }
             
         
 
-    var hand = Owner?.Player?.PlayerCombatState?.Hand?.Cards;
-    if (hand == null) return;
-
-    var candidates = hand
-        .Where(c => c.Type != CardType.Curse && c.Type != CardType.Status)
-        .ToList();
-
-    if (candidates.Count == 0) return;
-
-    // 关键修复：按费用的【数值】排序，而不是按 EnergyCost 对象本身
-     CardModel? highest = candidates
-        .OrderByDescending(x => x.EnergyCost.GetAmountToSpend())
-        .FirstOrDefault();
-
-    if (highest != null)
-    {
-        highest.GiveSingleTurnRetain();
-        highest.EnergyCost.AddUntilPlayed(-1);
-    }
+    
 
         }
 }

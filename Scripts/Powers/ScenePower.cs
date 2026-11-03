@@ -1,56 +1,54 @@
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
-using STS2RitsuLib.Combat.Ui.ExtraCornerAmountLabels;
 using Test.Scripts;
+
 
 public sealed class ScenePower : AbstractHarukaPower
 {
-	private class Data
-	{
-		public int cardsLeft = 12;
-	}
+    private class Data
+    {
+        public int cardsLeft = BaseCardsLeft;
+    }
 
-	public event Action? PowerExtraIconAmountLabelsInvalidated;
+    private const int BaseCardsLeft = 12;
 
-    public IReadOnlyList<ExtraIconAmountLabelSpec> GetPowerExtraIconAmountLabelSpecs() =>
-    [
-        ExtraIconAmountLabelSpec.Plain(ExtraIconAmountLabelCorner.BottomRight,
-            $"{_baseCardsLeft - GetInternalData<Data>().cardsLeft}")
-    ];
+    private const string BaseCardsKey = "BaseCards";
 
-	private const int _baseCardsLeft = 12;
+    public override PowerType Type => PowerType.Buff;
 
-	private const string _baseCardsKey = "BaseCards";
+    public override PowerStackType StackType => PowerStackType.Counter;
 
-	public override PowerType Type => PowerType.Buff;
+    // 主数字显示剩余抽牌数（12 → 1），不要再用额外角标叠同一块矩形。
+    public override int DisplayAmount => GetInternalData<Data>().cardsLeft;
 
-	public override PowerStackType StackType => PowerStackType.Counter;
+    public override PowerInstanceType InstanceType => PowerInstanceType.Instanced;
 
-	public override int DisplayAmount => GetInternalData<Data>().cardsLeft;
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar(BaseCardsKey, BaseCardsLeft)];
 
-	public override PowerInstanceType InstanceType => PowerInstanceType.Instanced;
+    protected override object InitInternalData()
+    {
+        return new Data();
+    }
 
-	protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("BaseCards", 12m)];
+    public override async Task AfterCardDrawn(PlayerChoiceContext choiceContext, CardModel card, bool fromHandDraw)
+    {
+        if (card.Owner != Owner.Player) return;
 
-	protected override object InitInternalData()
-	{
-		return new Data();
-	}
+        var data = GetInternalData<Data>();
+        data.cardsLeft--;
+        InvokeDisplayAmountChanged();
 
-	public override async Task AfterCardDrawn(PlayerChoiceContext choiceContext, CardModel card, bool fromHandDraw)
-	{
-		if (card.Owner != Owner.Player) return;
-		
-    	Data data = GetInternalData<Data>();
-    	data.cardsLeft--;
-    	if (data.cardsLeft < 12) return;
+        if (data.cardsLeft > 0) return;
 
-    	data.cardsLeft = 0;
-    	Flash();
-    	await OrbCmd.Channel<BubbleOrb>(new BlockingPlayerChoiceContext(), Owner.Player);
-		PowerExtraIconAmountLabelsInvalidated?.Invoke();
-	}
+        Flash();
+        await OrbCmd.Channel<BubbleOrb>(choiceContext, Owner.Player);
+
+        data.cardsLeft = BaseCardsLeft;
+        InvokeDisplayAmountChanged();
+    }
 }
