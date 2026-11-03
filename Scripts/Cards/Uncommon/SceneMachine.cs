@@ -14,6 +14,7 @@ using MegaCrit.Sts2.Core.HoverTips;
 using Haruka.Scripts.Enums;
 using MegaCrit.Sts2.Core.Models;
 using Haruka.Scripts.Cards.Token;
+using Test.Scripts;
 
 
 
@@ -30,7 +31,7 @@ namespace Haruka.Scripts.Cards.Uncommon
 
         protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<ScenePower>(1)];
 
-        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromKeyword(HarukaKeywords.BubbleKeyword)];
+        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromOrb<BubbleOrb>()];
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => [];
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)

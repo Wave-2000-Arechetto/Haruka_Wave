@@ -31,7 +31,7 @@ namespace Haruka.Scripts.Cards.Uncommon
 
         protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<RetainHandPower>(1)];
 
-        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [];
+        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromKeyword(CardKeyword.Retain), HoverTipFactory.FromOrb<BubbleOrb>()];
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {

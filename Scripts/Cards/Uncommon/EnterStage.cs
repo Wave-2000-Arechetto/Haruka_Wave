@@ -39,7 +39,7 @@ namespace Haruka.Scripts.Cards.Uncommon
 
         protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(8, ValueProp.Move)];
 
-        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromKeyword(HarukaKeywords.ChannelOnFrontKeyword)];
+        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromKeyword(HarukaKeywords.ChannelOnFrontKeyword), HoverTipFactory.FromOrb<BubbleOrb>()];
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => [];
 

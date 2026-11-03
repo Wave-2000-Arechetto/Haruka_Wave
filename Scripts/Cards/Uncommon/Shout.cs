@@ -12,6 +12,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 using Haruka.Scripts.UI;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models.Orbs;
+using Haruka.Scripts.Enums;
 
 
 
@@ -28,7 +29,7 @@ namespace Haruka.Scripts.Cards.Uncommon
 
         protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2)];
 
-        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [];
+        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromKeyword(HarukaKeywords.InspireKeyword)];
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {

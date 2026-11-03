@@ -15,6 +15,7 @@ using Haruka.Scripts.Enums;
 using MegaCrit.Sts2.Core.Models;
 using Haruka.Scripts.Cards.Token;
 using HarmonyLib;
+using Test.Scripts;
 
 
 
@@ -31,7 +32,7 @@ namespace Haruka.Scripts.Cards.Rare
 
         protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<HandballPower>(1)];
 
-        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromCard<Return>()];
+        protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromCard<Return>(), HoverTipFactory.FromOrb<BubbleOrb>()];
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => [];
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
