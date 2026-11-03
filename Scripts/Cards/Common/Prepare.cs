@@ -30,7 +30,7 @@ namespace Haruka.Scripts.Cards.Common
 
         public override bool GainsBlock => true;
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(12, ValueProp.Move)];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(14, ValueProp.Move)];
 
         protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromKeyword(HarukaKeywords.MioKeyword), HoverTipFactory.FromCard<SnowGlow>(IsUpgraded)];
 

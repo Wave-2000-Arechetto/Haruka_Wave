@@ -77,10 +77,9 @@ public class SpotlightOrb : ModOrbTemplate
     {
         PlayEvokeSfx();
         await Cmd.Wait(0.2f);
-        await PowerCmd.Apply<VigorPower>(playerChoiceContext, Owner.Creature, EvokeVal, Owner.Creature, null);
-        if (Owner.Creature.Pets.FirstOrDefault(c => c.Monster is Mio) is Creature mio)
+        for (int i = 0; i < 2; i++)
         {
-            await PowerCmd.Apply<VigorPower>(playerChoiceContext, mio, EvokeVal, Owner.Creature, null);
+            await ApplySpotlightDamage(EvokeVal, null, playerChoiceContext, true);
         }
             
         return [Owner.Creature];
@@ -107,6 +106,13 @@ public class SpotlightOrb : ModOrbTemplate
 		
 		PlayEvokeSfx();
 		await CreatureCmd.Damage(choiceContext, targets, value, ValueProp.Unpowered, base.Owner.Creature);
+        if (isEvoke)
+        {
+            foreach (var creature in targets)
+            {
+                await PowerCmd.Apply<WeakPower>(choiceContext, creature, 1, base.Owner.Creature, null);
+            }
+        }
 
         
 		return targets;

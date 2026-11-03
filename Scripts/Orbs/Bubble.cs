@@ -25,7 +25,7 @@ public class BubbleOrb : ModOrbTemplate
 
     private int passiveVal = 1;
 
-    private int evokeVal = 2;
+    private int evokeVal = 3;
     public override decimal PassiveVal => ModifyOrbValue(passiveVal);
 
     // 激发效果数值

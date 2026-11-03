@@ -35,7 +35,7 @@ namespace Haruka.Scripts.Cards.Uncommon
         private const TargetType targetType = TargetType.AnyEnemy;
         private const bool shouldShowInCardLibrary = true;
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(8, ValueProp.Move)];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(9, ValueProp.Move)];
 
         protected override IEnumerable<IHoverTip> AdditionalHoverTips => [];
 
