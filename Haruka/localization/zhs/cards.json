@@ -275,7 +275,7 @@
 	"HARUKA_CARD_ATTACHED.description": "每场战斗第一次使用[gold]攻击[/gold]，[gold]技能[/gold]和[gold]能力[/gold]牌时，将这张牌加入手牌。\n获得{energyPrefix:energyIcons(1)}{IfUpgraded:show:并抽1张牌|}。",
 
 	"HARUKA_CARD_ARTIST_OF_STORY.title":"怪谈缠身的艺人",
-	"HARUKA_CARD_ARTIST_OF_STORY.description": "造成{Damage:diff()}点伤害。\n本场战斗中每进入1次[gold]恐惧[/gold]，重复1次。",
+	"HARUKA_CARD_ARTIST_OF_STORY.description": "造成{Damage:diff()}点伤害。\n本场战斗中每变化1次[gold]情绪[/gold]，重复1次。{InCombat:(额外造成{Hits:diff()}次伤害。)|}",
 
 	"HARUKA_CARD_FROTH.title":"幻沫",
 	"HARUKA_CARD_FROTH.description": "随机[gold]生成[/gold]2个遥的充能球。\n如果你因此[gold]激发[/gold]了充能球，获得1个充能球栏位。",

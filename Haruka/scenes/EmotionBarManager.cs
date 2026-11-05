@@ -54,10 +54,11 @@ namespace Haruka.Scripts.UI
 					await TriggerUpDownOrbs(choiceContext, owner);
 				}
 
-				if (next < 0)
-				{
-					IncrementScareEnterCount(owner);
-				}
+				
+				IncrementScareEnterCount(owner);
+				
+
+
 			}
 
 			await ResetEmotion(choiceContext, owner, next);

@@ -28,7 +28,7 @@ namespace Haruka.Scripts.Cards.Uncommon
         private const TargetType targetType = TargetType.Self;
         private const bool shouldShowInCardLibrary = true;
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(12, ValueProp.Move), new IntVar("Extra", 1)];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(14, ValueProp.Move), new IntVar("Extra", 1)];
 
         protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromKeyword(HarukaKeywords.ScareKeyword), HoverTipFactory.FromOrb<BubbleOrb>()];
 

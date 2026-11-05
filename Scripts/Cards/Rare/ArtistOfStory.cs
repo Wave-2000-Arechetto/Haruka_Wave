@@ -23,6 +23,8 @@ using Test.Scripts;
 using MegaCrit.Sts2.Core.Models.Powers;
 using System.Threading.Channels;
 using STS2RitsuLib.Scaffolding.Characters;
+using MegaCrit.Sts2.Core.Combat;
+using STS2RitsuLib.Cards.DynamicVars;
 
 
 
@@ -37,17 +39,28 @@ namespace Haruka.Scripts.Cards.Rare
         private const TargetType targetType = TargetType.AnyEnemy;
         private const bool shouldShowInCardLibrary = true;
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(8, ValueProp.Move)];
+        protected override IEnumerable<DynamicVar> CanonicalVars => [
+            new DamageVar(10, ValueProp.Move),
+            ModCardVars.Computed("Hits", 0m, card => CountHits(card))
+        ];
 
         protected override IEnumerable<IHoverTip> AdditionalHoverTips => [HoverTipFactory.FromKeyword(HarukaKeywords.ScareKeyword)];
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => [];
 
+        private static decimal CountHits(CardModel? card)
+{
+    if (card is not { IsMutable: true }) return 0m;
+    var owner = card?.Owner;
+    if (owner == null || !CombatManager.Instance.IsInProgress) return 0m;
+    return (int)(EmotionBarManager.Instance?._ScareEnterCounts[owner] ?? 0);
+}
+
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            int times = (int)(EmotionBarManager.Instance?._ScareEnterCounts[Owner] ?? 0);
+            //int times = (int)(EmotionBarManager.Instance?._ScareEnterCounts[Owner] ?? 0);
             await DamageCmd.Attack(DynamicVars.Damage.BaseValue) // 造成伤害，数值来源于卡牌的基础伤害属性
-                .WithHitCount(times + 1)
+                .WithHitCount((int)CountHits(cardPlay.Card) + 1)
                 .FromCard(this,cardPlay) // 伤害来源于这张卡牌
                 .Targeting(cardPlay.Target!)// 伤害目标是目标
                 .Execute(choiceContext);

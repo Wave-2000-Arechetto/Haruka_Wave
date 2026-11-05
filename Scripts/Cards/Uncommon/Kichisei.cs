@@ -39,7 +39,7 @@ namespace Haruka.Scripts.Cards.Uncommon
         private const bool shouldShowInCardLibrary = true;
 
         protected override IEnumerable<DynamicVar> CanonicalVars => [
-            new DamageVar(6, ValueProp.Move),
+            new DamageVar(8, ValueProp.Move),
             ModCardVars.Computed("Hits", 0m, card => CountHits(card)),
         ];
 
