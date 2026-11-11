@@ -52,10 +52,14 @@ namespace Haruka.Scripts.Cards.Rare
                 .Execute(choiceContext);
 
             var queue = Owner.PlayerCombatState!.OrbQueue;
-            while (queue.Orbs.Count < Owner.GetOrbCapacity() || queue.Orbs.Any(o => o is not SpotlightOrb))
+
+            if (queue != null)
+            {
+                while (queue.Orbs.Count < Owner.GetOrbCapacity() || queue.Orbs.Any(o => o is not SpotlightOrb))
             {
                 await OrbCmd.Channel<SpotlightOrb>(choiceContext, Owner);
             }
+            }            
 
     
 
